@@ -1,0 +1,109 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Open+Sans&display=swap");
+
+:root {
+  /* Colors */
+  --main-color: #f0f6ff;
+  --main-color-transparent: #f0f6ff86;
+  --sec-color: #333;
+  --sec-color-transp: #3333337a;
+  --terc-color: #add8e6;
+  --terc-color-transp: #add8e68f;
+  --cuart-color: #dfebf7;
+  --quint-color: #a9d1e5;
+
+  /* Fonts */
+  --paragraph: Lato, "Open Sans", sans-serif;
+  --titles: "Open Sans", sans-serif;
+  --fancy-titles: "Bree Serif", sans-serif;
+
+  --font-size: 1.2em;
+}
+
+/* General styles */
+body {
+  font-family: var(--paragraph);
+  font-size: var(--font-size);
+  background-color: var(--main-color);
+  color: var(--sec-color);
+  margin: 0 auto;
+  padding: 0;
+  max-width: 2600px;
+}
+
+header {
+  font-family: var(--fancy-titles);
+  background-color: var(--terc-color);
+  text-align: center;
+  margin: 0 auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#name {
+  text-align: center;
+}
+
+#bruno-img {
+  max-width: 150px;
+  box-sizing: border-box;
+  background-color: var(--cuart-color);
+  border-radius: 100%;
+  float: inline-start;
+}
+
+nav {
+  font-family: var(--titles);
+  background-color: var(--terc-color);
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--sec-color);
+  margin: 10px;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  grid-area: auto;
+}
+
+/* Cards styles */
+.card {
+  background-color: var(--cuart-color);
+  border: 1px solid var(--quint-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  grid-column: auto;
+}
+.card ul {
+  list-style: none;
+}
+
+.card h3 {
+  color: var(--sec-color);
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--terc-color);
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Link styles */
+a {
+  color: #193f5f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
