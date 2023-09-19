@@ -56,6 +56,9 @@ nav {
   font-family: var(--titles);
   background-color: var(--terc-color);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
 }
 
