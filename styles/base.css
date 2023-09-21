@@ -71,7 +71,6 @@ nav a {
 
 main {
   padding: 20px;
-  grid-area: auto;
 }
 
 /* Cards styles */
@@ -80,8 +79,8 @@ main {
   border: 1px solid var(--quint-color);
   padding: 20px;
   margin-bottom: 20px;
-  grid-column: auto;
 }
+
 .card ul {
   list-style: none;
 }
@@ -95,6 +94,9 @@ footer {
   background-color: var(--terc-color);
   text-align: center;
   padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 10px;
 }
 
 footer p {
