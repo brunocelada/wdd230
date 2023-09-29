@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;600&display=swap");
+
+:root {
+  --main-background: #f4f4f9;
+  --sec-color: #90e0ef;
+  --third-color: #586f7c;
+  --contrast: #2f4550;
+  --dark-contrast: black;
+
+  --heading-font: "Raleway", "Inter", sans-serif;
+  --paragraph-font: "Inter", sans-serif;
+}
+
+/* Taken from WDD 130 class */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+  background-color: white;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--dark-contrast);
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--contrast);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: white;
+  background-color: var(--contrast);
+}
+
+header > h1,
+header > h2 {
+  color: white;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--dark-contrast);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--main-background);
+}
+
+.secondary {
+  background-color: var(--sec-color);
+}
+
+.accent1 {
+  background-color: var(--third-color);
+}
+
+.accent2 {
+  background-color: var(--contrast);
+}
+
+p.colored {
+  background-color: var(--third-color);
+  color: var(--main-background);
+}
+
+nav {
+  background-color: var(--dark-contrast);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+}
+
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--main-background);
+}
+
+nav a:hover {
+  color: var(--main-background);
+  background-color: var(--contrast);
+}
+
+.sitemap {
+  text-align: center;
+}
+
+.sitemap img {
+  max-width: 50%;
+}
+
+.page-logo {
+  width: 150px;
+  background-color: var(--sec-color);
+  margin: 20px;
+  box-sizing: border-box;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.grid-img {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.logo-img {
+  max-width: 40%;
+}
+
+.wireframe {
+  max-width: 70%;
+}
+
+.mobile-view {
+  max-width: 30%;
+}
