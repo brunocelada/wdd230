@@ -28,7 +28,8 @@
         <a href="index.html">
             <img src="images/rosario-chamber-logo.jpeg" alt="Chamber Logo" id="logo">
         </a>
-        <nav>
+        <button id="menu"></button>
+        <nav class="navigation">
             <a href="index.html" class="active">HOME</a>
             <a href="#">DISCOVER</a>
             <a href="#">DIRECTORY</a>
@@ -38,28 +39,78 @@
 
     <main>
         <div id="hero">
-            <img src="" alt="Rosario Chamber Image" id="hero-img">
+            <h1>ROSARIO CHAMBER OF COMMERCE</h1>
             <button id="join-button">JOIN THE CHAMBER</button>
+            <img src="images/hero-img-1.jpeg" alt="Rosario Chamber Image" id="hero-img">
         </div>
 
+        <hr> <H2>EVENTS</H2>
         <section class="events"> <!-- Will be replaced -->
-
+            <img src="images/event-1.png" alt="Event model 1">
+            <h2>Title great event!</h2>
+            <p>Short descrition about this big event</p>
+            <button class="info-button">More info...</button>
         </section>
+
+        <hr> <H2>WEATHER</H2>
         <section class="weather"> <!-- Will be replaced -->
             <img src="images/weather.png" alt="Weather of Rosario"> 
         </section>
-        <section class="spotlights"> <!-- Will be replaced -->
 
+        <hr> <H2>COMPANIES</H2>
+        <section class="companies"> <!-- Will be replaced -->
+            <img src="images/fict-company-1.jpeg" alt="Company Image 1" class="company-img">
+            <img src="images/fict-company-2.jpeg" alt="Company Image 2" class="company-img">
+            <img src="images/fict-company-3.jpeg" alt="Company Image 3" class="company-img">
+            <img src="images/fict-company-4.jpeg" alt="Company Image 4" class="company-img">
+            <img src="images/fict-company-5.jpeg" alt="Company Image 5" class="company-img">
         </section>
+
+        <hr> <H2>REVIEWS</H2>
+        <section class="spotlights"> <!-- Will be replaced -->
+            <div class="review">
+                <img src="images/company-logo-1.jpeg" alt="Company Logo 1" class="review-img">
+                <p class="company-name">Company 1</p>
+                <p class="author">Author 1</p>
+                <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, vero. Inventore ipsam aspernatur minus nisi quasi, cupiditate ullam autem id?</p>
+            </div>
+            <div class="review">
+                <img src="images/company-logo-2.jpeg" alt="Company Logo 2" class="review-img">
+                <p class="company-name">Company 2</p>
+                <p class="author">Author 2</p>
+                <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio excepturi perspiciatis aliquam pariatur eius blanditiis voluptatem nisi quo dolore suscipit.</p>
+            </div>
+            <div class="review">
+                <img src="images/company-logo-3.jpeg" alt="Company Logo 3" class="review-img">
+                <p class="company-name">Company 3</p>
+                <p class="author">Author 3</p>
+                <p class="comment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quam voluptatibus iusto corporis quia eos ducimus porro cumque, culpa quasi!</p>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
-        <p><a href="mailto:brunocelada@churchofjesuschrist.org">brunocelada@churchofjesuschrist.org</a> | 
-            <a target="_blank" href="https://wa.me/5493416518799">+54 9 341 6518799</a></p>
-        <p>&COPY;<span id="current-year"></span> | Bruno Celada | Rosario, Argentina | Project for WDD 230 Course (BYUI)</p>
-        <p id="lastModified"></p>
+        <div class="footer-info">
+            <a href="mailto:brunocelada@churchofjesuschrist.org">brunocelada@churchofjesuschrist.org</a> <br>
+            <a target="_blank" href="https://wa.me/5493416518799">+54 9 341 6518799</a>
+            <p>&COPY;<span id="current-year"></span> | Bruno Celada | Rosario, Argentina<br>Project for WDD 230 Course (BYUI)</p>
+            <p id="lastModified"></p>
+        </div>
+
+        <div class="social">
+            <a target="_blank" href="https://www.linkedin.com/in/brunocelada/?locale=en_US">
+                <img src="images/linkedin-logo-white.png" alt="LinkedIn Logo">
+            </a>
+            <a target="_blank" href="https://wa.me/5493416518799">
+                <img src="images/whatsapp-logo-white2.png" alt="Whatsapp Logo">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/brunocelada/">
+                <img src="images/instagram-logo-white.png" alt="Instagram Logo">
+            </a>
+        </div>
     </footer>
 
-    <script src="scripts/getDates.js"></script>
+    <script src="scripts/js-chamber.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+@media screen and (min-width: 1200px) {
+  /* company */
+  .companies {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* spotlights */
+  .spotlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .review:last-child {
+    grid-column: initial;
+  }
+}
