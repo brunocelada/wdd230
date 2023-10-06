@@ -13,8 +13,13 @@
     text-align: center;
     margin-bottom: 0.5rem;
   }
-  
-    /* company */
+
+  /* Sections */
+  section h2 {
+    grid-column: 1/4;
+  }
+
+  /* company */
   .companies {
     grid-template-columns: repeat(3, 1fr);
   }
