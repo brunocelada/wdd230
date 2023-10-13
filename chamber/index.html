@@ -14,7 +14,7 @@
     <meta property="og:title" content="Rosario Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://comisiondefilmacionessf.gob.ar/wp-content/uploads/2021/09/DSC0880-scaled.jpg">
-    <meta property="og:url" content="https://brunocelada.github.io/wdd230/chamber/"> <!--change-->
+    <meta property="og:url" content="https://brunocelada.github.io/wdd230/chamber/index.html">
 
     <!-- Styles -->
     <link rel="stylesheet" href="../styles/normalize.css">
@@ -26,8 +26,13 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="images/rosario-chamber-logo.jpeg" alt="Chamber Logo" id="logo">
+            <img src="images/rosario-chamber-logo-removebg.png" alt="Chamber Logo" id="logo">
         </a>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
         <button id="menu"></button>
         <nav class="navigation">
             <a href="index.html" class="active">HOME</a>
@@ -41,10 +46,9 @@
         <div id="hero">
             <h1>Rosario Chamber of Commerce</h1>
             <button id="join-button">JOIN THE CHAMBER</button>
-            <img src="images/hero-img-1.jpeg" alt="Rosario Chamber Image" id="hero-img">
+            <img src="images/hero-img-2.jpeg" alt="Rosario Chamber Image" id="hero-img">
         </div>
-
-        <hr> 
+       
         <section class="events"> <!-- Will be replaced -->
             <h2>EVENTS</h2>
             <img src="images/event-1.png" alt="Event model 1">
@@ -62,11 +66,11 @@
         <hr> 
         <section class="companies"> <!-- Will be replaced -->
             <h2>COMPANIES</h2>
-            <img src="images/fict-company-1.jpeg" alt="Company Image 1" class="company-img">
-            <img src="images/fict-company-2.jpeg" alt="Company Image 2" class="company-img">
-            <img src="images/fict-company-3.jpeg" alt="Company Image 3" class="company-img">
-            <img src="images/fict-company-4.jpeg" alt="Company Image 4" class="company-img">
-            <img src="images/fict-company-5.jpeg" alt="Company Image 5" class="company-img">
+            <a href="images/fict-company-1.jpeg" target="_blank"><img src="images/fict-company-1.jpeg" alt="Company Image 1" class="company-img"></a>
+            <a href="images/fict-company-2.jpeg" target="_blank"><img src="images/fict-company-2.jpeg" alt="Company Image 2" class="company-img"></a>
+            <a href="images/fict-company-3.jpeg" target="_blank"><img src="images/fict-company-3.jpeg" alt="Company Image 3" class="company-img"></a>
+            <a href="images/fict-company-4.jpeg" target="_blank"><img src="images/fict-company-4.jpeg" alt="Company Image 4" class="company-img"></a>
+            <a href="images/fict-company-5.jpeg" target="_blank"><img src="images/fict-company-5.jpeg" alt="Company Image 5" class="company-img"></a>
         </section>
 
         <hr> 
@@ -115,6 +119,6 @@
         </div>
     </footer>
 
-    <script src="scripts/js-chamber.js"></script>
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>

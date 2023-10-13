@@ -10,3 +10,10 @@ document.querySelector("#menu").addEventListener("click", () => {
   document.querySelector(".navigation").classList.toggle("show");
   document.querySelector("#menu").classList.toggle("show");
 });
+
+// Slider (dark mode)
+const modeButton = document.querySelector(".switch");
+
+modeButton.addEventListener("change", () => {
+  document.body.classList.toggle("darkmode");
+});

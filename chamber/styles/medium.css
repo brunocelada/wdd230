@@ -1,4 +1,19 @@
 @media screen and (min-width: 640px) {
+  /* Slider */
+:root {
+  --switcher-size: 1.3rem;
+}
+.switch {
+  top: 2rem;
+  right: 1rem;
+}
+  /* HERO */
+  #hero h1 {
+    font-size: 3rem;
+  }
+  #logo {
+    max-width: 70px;
+  }
   /* menu and navigation */
   #menu {
     display: none;
@@ -36,11 +51,11 @@
   footer {
     text-align: left;
     display: grid;
+    padding: 1.3rem;
     grid-template-columns: 1fr 25%;
   }
   .social {
     justify-self: right;
-
     margin-right: 1rem;
   }
 }
