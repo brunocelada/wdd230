@@ -201,7 +201,7 @@ a.active {
 }
 #hero-img {
   width: 100%;
-  max-height: 400px;
+  max-height: 350px;
   object-fit: cover;
   transition: all 200ms ease-out;
 }

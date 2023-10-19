@@ -23,6 +23,13 @@
     text-align: center;
   }
 
+  .temple-name {
+    font-size: 3rem;
+  }
+  .hero img {
+    padding: 5px 1rem;
+  }
+
   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

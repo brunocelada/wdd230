@@ -101,9 +101,31 @@ main {
   padding: 20px;
 }
 
-/* wayfinding */
+/* Wayfinding */
 .active {
   background-color: var(--main-color-transparent);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+}
+.temple-name {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  font-size: 1.7rem;
+  color: var(--main-color);
+  text-shadow: var(--sec-color) 2px 2px 3px;
+}
+.hero img {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 /* Cards styles */
