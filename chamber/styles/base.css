@@ -181,25 +181,24 @@ a.active {
 #hero h1 {
   position: absolute;
   color: var(--sec-color);
-  font-size: 2rem;
-  top: 1rem;
+  font-size: 1.5rem;
+  top: 0;
   left: 0;
   right: 0;
-  text-shadow: var(--dark-contrast) 2px 2px 1px;
-  background-color: var(--hero-h1-gb);
+  text-shadow: var(--dark-contrast) 1px 1px 4px, var(--dark-contrast) -1px -1px 4px;
   border-radius: 10px;
-  margin: 1rem 6rem;
+  margin: 1rem 0;
 }
 #join-button {
   position: absolute;
   left: 0;
-  bottom: 3rem;
+  bottom: 2rem;
   right: 0;
-  margin: 0 30%;
-  padding: 1rem 0;
+  margin: 0 25%;
+  padding: .5rem 0;
   justify-self: center;
 }
-#hero-img {
+.hero-img {
   width: 100%;
   max-height: 350px;
   object-fit: cover;
@@ -214,6 +213,9 @@ a.active {
 }
 
 /* WEATHER SECTION */
+.wheater div {
+  display: block;
+}
 
 /* COMPANY SECTION */
 .companies {

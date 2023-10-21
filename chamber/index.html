@@ -46,12 +46,22 @@
         <div id="hero">
             <h1>Rosario Chamber of Commerce</h1>
             <button id="join-button">JOIN THE CHAMBER</button>
-            <img src="images/hero-img-2.webp" alt="Rosario Chamber Image" id="hero-img">
+            <!-- provisional picture -->
+            <picture class="hero-img">
+                <source media="(max-width: 640px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1200px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Hero Image" style="max-height: 750px; object-fit: cover; width: 100%;">
+            </picture>
+            <!-- <picture class="hero-img">
+                <source media="(max-width: 640px)" srcset="images/hero2-small.webp">
+                <source media="(max-width: 1200px)" srcset="images/hero2-medium.webp">
+                <img src="images/hero2-large.webp" alt="Rosario Chamber Image" style="max-height: 350px; object-fit: cover; width: 100%">
+            </picture> -->
         </div>
        
         <section class="events"> <!-- Will be replaced -->
             <h2>EVENTS</h2>
-            <img src="images/event-1.webp" alt="Event model 1">
+            <img src="images/event-1.webp" alt="Event model 1" style="width: 100%;">
             <h2>Title great event!</h2>
             <p>Short descrition about this big event</p>
             <button class="info-button">More info...</button>
@@ -60,7 +70,13 @@
         <hr> 
         <section class="weather"> <!-- Will be replaced -->
             <h2>WEATHER</h2>
-            <img src="images/weather.webp" alt="Weather of Rosario"> 
+            <!-- <img src="images/weather.webp" alt="Weather of Rosario" style="width: 100%;">  -->
+            <h3>Wind Chill Value</h3>
+            <input type="text" id="temperature" placeholder="Temperature (in °F)" value="">
+            <input type="text" id="windspeed" placeholder="Windspeed (in mph)" value="">
+            <button type="submit" id="calculate-wc">Calculate</button>
+            <span id="temperature-value"></span><span>°F</span>
+            <span id="windspeed-value"></span><span>mph</span>
         </section>
 
         <hr> 
@@ -120,5 +136,6 @@
     </footer>
 
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
