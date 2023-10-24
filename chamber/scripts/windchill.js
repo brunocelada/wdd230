@@ -1,9 +1,6 @@
 const weather = document.querySelector(".weather");
-const temperatureInput = document.querySelector("#temperature");
-const windspeedInput = document.querySelector("#windspeed");
-const temperatureValue = document.querySelector("#temperature-value");
-const windspeedValue = document.querySelector("#windspeed-value");
-const button = document.querySelector("#calculate-wc");
+const temperature = document.querySelector("#temperature");
+const windspeed = document.querySelector("#windspeed");
 
 function temperatureConversor(value, mode) {
   if (mode) {
@@ -24,66 +21,83 @@ function velocityConversor(value, mode) {
   }
 }
 
-function calculateWindChillValue(temperature, windspeed) {
-  if (temperature <= 50 && windspeed > 3) {
+function calculateWindChill(temp, windsp) {
+  if (temp <= 50 && windsp > 3) {
     return (
-      (
+      "Wind Chill Value: " +
+      ((
         35.74 +
-        0.6215 * temperature -
-        35.75 * Math.pow(windspeed, 0.16) +
-        0.4275 * temperature * Math.pow(windspeed, 0.16)
-      ).toFixed(2) + "°F"
+        0.6215 * temp -
+        35.75 * Math.pow(windsp, 0.16) +
+        0.4275 * temp * Math.pow(windsp, 0.16)
+      ).toFixed(2) +
+        "°F")
     );
   } else {
     return "N/A";
   }
 }
 
-button.addEventListener("click", () => {
-  temperatureValue.textContent = temperatureInput.value;
-  windspeedValue.textContent = windspeedInput.value;
-  if (temperatureInput.value == "") {
-    temperatureInput.setAttribute("placeholder", "Please, write a valid input");
-    temperatureInput.focus();
-  } else {
-    if (windspeedInput.value == "") {
-      windspeedInput.setAttribute("placeholder", "Please, write a valid input");
-      windspeedInput.focus();
-    } else {
-      // Clean the results
-      if (document.querySelector("#wind-chill-value") !== null) {
-        const existingWindChillValue =
-          document.querySelector("#wind-chill-value");
-        weather.removeChild(existingWindChillValue);
-        temperatureValue.textContent = "0";
-        windspeedValue.textContent = "0";
-      }
-      temperatureValue.textContent = temperatureInput.value;
-      windspeedValue.textContent = windspeedInput.value;
+function displayWindChill() {
+  const windChill = document.createElement("p");
+  windChill.id = "wind-chill";
 
-      const windChillValue = document.createElement("p");
-      windChillValue.id = "wind-chill-value";
-      const deleteButton = document.createElement("button");
+  windChill.textContent = calculateWindChill(
+    parseFloat(temperature.textContent),
+    parseFloat(windspeed.textContent)
+  );
 
-      windChillValue.textContent = calculateWindChillValue(
-        parseFloat(temperatureInput.value),
-        parseFloat(windspeedInput.value)
-      );
-      deleteButton.textContent = "X";
-      deleteButton.ariaLabel = "Remove Wind Chill value";
+  weather.appendChild(windChill);
+}
 
-      windChillValue.append(deleteButton);
+console.log(temperature, windspeed);
+displayWindChill();
 
-      weather.appendChild(windChillValue);
+// button.addEventListener("click", () => {
+//   temperatureValue.textContent = temperatureInput.value;
+//   windspeedValue.textContent = windspeedInput.value;
+//   if (temperatureInput.value == "") {
+//     temperatureInput.setAttribute("placeholder", "Please, write a valid input");
+//     temperatureInput.focus();
+//   } else {
+//     if (windspeedInput.value == "") {
+//       windspeedInput.setAttribute("placeholder", "Please, write a valid input");
+//       windspeedInput.focus();
+//     } else {
+//       // Clean the results
+//       if (document.querySelector("#wind-chill-value") !== null) {
+//         const existingWindChillValue =
+//           document.querySelector("#wind-chill-value");
+//         weather.removeChild(existingWindChillValue);
+//         temperatureValue.textContent = "0";
+//         windspeedValue.textContent = "0";
+//       }
+//       temperatureValue.textContent = temperatureInput.value;
+//       windspeedValue.textContent = windspeedInput.value;
 
-      deleteButton.addEventListener("click", () => {
-        weather.removeChild(windChillValue);
-      });
-      temperatureInput.value = "";
-      temperatureInput.setAttribute("placeholder", "");
-      windspeedInput.value = "";
-      windspeedInput.setAttribute("placeholder", "");
-      temperatureInput.focus();
-    }
-  }
-});
+//       const windChillValue = document.createElement("p");
+//       windChillValue.id = "wind-chill-value";
+//       const deleteButton = document.createElement("button");
+
+//       windChillValue.textContent = calculateWindChillValue(
+//         parseFloat(temperatureInput.value),
+//         parseFloat(windspeedInput.value)
+//       );
+//       deleteButton.textContent = "X";
+//       deleteButton.ariaLabel = "Remove Wind Chill value";
+
+//       windChillValue.append(deleteButton);
+
+//       weather.appendChild(windChillValue);
+
+//       deleteButton.addEventListener("click", () => {
+//         weather.removeChild(windChillValue);
+//       });
+//       temperatureInput.value = "";
+//       temperatureInput.setAttribute("placeholder", "");
+//       windspeedInput.value = "";
+//       windspeedInput.setAttribute("placeholder", "");
+//       temperatureInput.focus();
+//     }
+//   }
+// });
