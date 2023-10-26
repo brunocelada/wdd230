@@ -1,0 +1,29 @@
+body {
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  color: black;
+  text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+main img {
+    aspect-ratio: 1 / 1;
+    justify-self: center;
+    align-self: center;
+    background: #000;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
