@@ -41,6 +41,7 @@ header {
 
 #bruno-img {
   width: 100px;
+  height: auto;
   box-sizing: border-box;
   background-color: var(--cuart-color);
   border-radius: 100%;
@@ -135,13 +136,17 @@ main {
   padding: 20px;
   margin-bottom: 20px;
 }
-
 .card ul {
   list-style: none;
 }
-
 .card h3 {
   color: var(--sec-color);
+}
+.label {
+  font-style: italic;
+}
+#visits, #temperature, #weather {
+  font-style: italic;
 }
 
 .map {

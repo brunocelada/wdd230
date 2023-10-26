@@ -50,7 +50,6 @@ function displayWindChill() {
   weather.appendChild(windChill);
 }
 
-console.log(temperature, windspeed);
 displayWindChill();
 
 // button.addEventListener("click", () => {
