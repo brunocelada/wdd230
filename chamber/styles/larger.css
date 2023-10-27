@@ -19,4 +19,33 @@
   .review:last-child {
     grid-column: initial;
   }
+
+  /* DISCOVER */
+  #discover {
+    margin: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 6rem;
+  }
+  .companies-container {
+    grid-column: 2;
+  }
+  .company {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 1rem 2rem;
+  }
+  .company img {
+    grid-column: 1;
+    grid-row: 1/4;
+  }
+  .company p {
+    padding: 3rem;
+  }
+  /* Sidebar */
+  .demographics-container {
+    grid-column: 1;
+    position: sticky;
+  }
 }

@@ -303,3 +303,65 @@ footer a:hover {
   background-color: var(--dark-contrast);
   color: var(--main-background);
 }
+
+/* DISCOVER PAGE */
+#discover {
+  margin: 1rem .5rem;
+  display: block;
+}
+.company {
+  display: block;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 3px;
+  margin: 1rem 0;
+  transition: var(--transition);
+  box-shadow: 1px 1px 4px var(--hero-h1-gb), -1px -1px 4px var(--hero-h1-gb);
+}
+.company img {
+  align-self: center;
+  opacity: 1;
+  border-radius: 3px;
+}
+.company h3, .company p, .company a {
+  grid-column: 2;
+}
+.company h3 {
+  font-weight: bolder;
+  font-size: 2em;
+  font-family: var(--heading-font);
+}
+.company p, .demographic p {
+  padding: 1rem;
+  text-align: justify;
+}
+.company a {
+  text-decoration: underline;
+  color: var(--dark-contrast);
+  text-align: right;
+  transition: var(--transition);
+}
+.company a:hover {
+  color: var(--contrast);
+}
+/* Sidebar */
+.demographic {
+  border-radius: 3px;
+  transition: var(--transition);
+  background-color: white;
+  box-shadow: 1px 1px 4px var(--hero-h1-gb), -1px -1px 4px var(--hero-h1-gb);
+}
+.company.darkmode, .demographic.darkmode {
+  background-color: #2f4550;
+}
+.company.darkmode a {
+  color: var(--sec-color);
+}
+.company.darkmode a:hover {
+  color: var(--main-background);
+}
+.demographic img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
