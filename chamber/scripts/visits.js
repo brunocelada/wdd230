@@ -2,7 +2,7 @@
 const dateToday = new Date();
 const msToDays = 86400000;
 const today = Date.now();
-let lastVisit = Number(window.localStorage.getItem("dateVisitSaved") || 0);
+let lastVisit = Number(window.localStorage.getItem("dateVisitSaved") || today);
 
 const visitsDisplay = document.querySelector("#visits");
 let numVisits = Number(window.localStorage.getItem("numVisitsSaved") || 0);
