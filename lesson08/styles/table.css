@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playpen+Sans&family=Raleway:wght@400;600&display=swap');
+
+:root {
+    --red: rgb(167, 19, 19);
+    --violet: rgb(73, 43, 155);
+    --black: rgb(7, 2, 29);
+    --gray: rgb(41, 41, 45); 
+    --lightgray: rgb(233, 233, 239);
+}
+
+body {
+    margin: 0 auto;
+    background-color: #dedede;
+    font-family: 'Playpen Sans', sans-serif;
+    font-size: 2em;
+}
+table {
+    background-color: white;
+    margin: 2rem;
+    border: 2px solid var(--black);
+    border-radius: 3px;
+    padding: 1rem;
+    text-align: center;
+    border-collapse: collapse;
+}
+th, td {
+    padding: .5rem 2rem;
+    border: .5px solid var(--black);
+}
+thead {
+    background-color: var(--gray);
+    color: white;
+}
+
+.not {
+    color: var(--red);
+}
+.yes {
+    color: var(--violet);
+}
+
+caption {
+    caption-side: bottom;
+    color: var(--black);
+    font-size: .7em;
+    padding: .2rem;
+    font-style: italic;
+}
+thead tr th:first-child {
+    background-color: var(--black);
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--lightgray);
+}
