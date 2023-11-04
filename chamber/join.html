@@ -1,0 +1,192 @@
+<!-- CHAMBER DIRECTORY -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Celada">
+    <meta name="description"
+      content="Join page for the Rosario Chamber of Commerce page. 
+            A Rosario local organization that gathers construction 
+            business leaders working in the community. Join us!!">
+    <title>Rosario Chamber of Commerce | Join</title>
+
+    <meta property="og:title" content="Rosario Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://comisiondefilmacionessf.gob.ar/wp-content/uploads/2021/09/DSC0880-scaled.jpg">
+    <meta property="og:url" content="https://brunocelada.github.io/wdd230/chamber/index.html">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/rosario-chamber-logo-removebg.webp" alt="Chamber Logo" id="logo">
+        </a>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">HOME</a>
+            <a href="discover.html">DISCOVER</a>
+            <a href="#">DIRECTORY</a>
+            <a href="join.html" class="active">JOIN</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="form-page">
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Applicant Information</legend>
+
+                <label class="top">First Name* <input type="text" name="fname" required id="fname"></label>
+                <label class="top">Last Name* <input type="text" name="lname" required id="lname"></label>
+                <label class="top">Title/position <input type="text" name="position" placeholder="E.g. 'Manager'" title="Only alpha characters, hyphens and spaces (minimum of 7 characters)" id="position" pattern="^[A-Za-z \-]{7,}"></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required id="email"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1112223333" required id="phone"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information</legend>
+
+                <label class="top">Business/Organization's Name* <input type="text" name="bname" required id="bname"></label>
+                <label class="top">Business/Organization's Description* <textarea name="description" id="description" cols="30" rows="10" placeholder="Our company works with..." required></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+
+                <label class="msoption"><input type="radio" name="mslevel" value="nonprofitm"> Non profit Membership</label>
+                <label class="msoption"><input type="radio" name="mslevel" value="bronzem"> Bronze Membership</label>
+                <label class="msoption"><input type="radio" name="mslevel" value="silverm"> Silver Membership</label>
+                <label class="msoption"><input type="radio" name="mslevel" value="goldm"> Gold Membership</label>
+            </fieldset>
+
+            <input class="submitBtn" type="submit" value="Apply now">
+            <input type="hidden" name="timestamp" id="timestamp">
+        </form>
+
+        <div id="membership-levels">
+            <section class="mslevel">
+                <img src="images/golden-star.webp" alt="Golden Star" loading="lazy">
+                <h3>Gold Membership</h3>
+                    <ul>
+                    <li>Prime positioning with a featured spotlight on the Chamber's homepage.</li>
+                    <li>Priority sponsorship opportunities at major Chamber events.</li>
+                    <li>Access to executive training and leadership development.</li>
+                    <li>Customized advertising and promotional campaigns.</li>
+                    <li>Exclusive access to high-level networking and strategic partnerships.</li>
+                </ul>
+                    <span class="price">Price: $999/year</span>
+            </section>
+            <section class="mslevel">
+                <img src="images/silver-star.webp" alt="Silver Star" loading="lazy">
+                <h3>Silver Membership</h3>
+                    <ul>
+                        <li>Enhanced visibility in Chamber publications.</li>
+                        <li>Priority access to premium events and seminars.</li>
+                        <li>Prominent advertising positions on the Chamber's home page.</li>
+                        <li>Exclusive member-to-member discounts.</li>
+                        <li>Personalized support and business introductions.</li>
+                    </ul>
+                    <span class="price">Price: $499/year</span>
+            </section>
+            <section class="mslevel">
+                <img src="images/bronzed-star.webp" alt="Bronzed Star" loading="lazy">
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>Listing in the Chamber's online directory.</li>
+                    <li>Access to educational seminars and training.</li>
+                    <li>Exclusive discounts on Chamber events and programs.</li>
+                    <li>Opportunities for limited advertising and promotion.</li>
+                </ul>
+                    <span class="price">Price: $199/year</span>
+            </section>
+            <section class="mslevel">
+                <img src="images/black-star.webp" alt="Black Star" loading="lazy">
+                <h3>Non profit Membership</h3>
+                <ul>
+                    <li>Access to valuable networking opportunities.</li>
+                    <li>Inclusion in Chamber communications and directories.</li>
+                    <li>Participation in special events and workshops.</li>
+                    <li>Recognition of your organization's contribution to the community.</li>
+                </ul>
+            </section>
+        </div>
+        <div id="membership-levels-desc">
+            <section class="mslevel">
+                <img src="images/golden-star.webp" alt="Golden Star" loading="lazy">
+                <h3>Gold Membership</h3>
+                <p>Our Gold Membership represents the pinnacle of engagement 
+                    and influence within Chamber of Commerce Rosario's 
+                    construction community. This elite membership level 
+                    offers unparalleled advantages for businesses aiming 
+                    to thrive and lead in the industry.</p>
+            </section>
+            <section class="mslevel">
+                <img src="images/silver-star.webp" alt="Silver Star" loading="lazy">
+                <h3>Silver Membership</h3>
+                <p>The Silver Membership is ideal for companies aspiring 
+                    to enhance their presence and opportunities within the 
+                    Chamber's construction network. Enjoy a comprehensive 
+                    package of benefits that will help you grow and excel in the industry.</p>
+            </section>
+            <section class="mslevel">
+                <img src="images/bronzed-star.webp" alt="Bronzed Star" loading="lazy">
+                <h3>Bronze Membership</h3>
+                <p>Our Bronze Membership is designed for businesses looking to 
+                    establish a strong foundation in the local construction industry. 
+                    This entry-level membership provides essential benefits to 
+                    kickstart your growth and recognition.</p>
+            </section>
+            <section class="mslevel">
+                <img src="images/black-star.webp" alt="Black Star" loading="lazy">
+                <h3>Non profit Membership</h3>
+                <p>The NP (Non-Profit) Membership level is exclusively for non-profit 
+                    organizations dedicated to the construction sector in Rosario. 
+                    As a token of our commitment to community development, there are no 
+                    membership fees associated with this level.</p>
+            </section>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <a href="mailto:brunocelada@churchofjesuschrist.org">brunocelada@churchofjesuschrist.org</a> <br>
+            <a target="_blank" href="https://wa.me/5493416518799">+54 9 341 6518799</a>
+            <p>&COPY;<span id="current-year"></span> | Bruno Celada | Rosario, Argentina<br>Project for WDD 230 Course (BYUI)</p>
+            <p id="lastModified"></p>
+        </div>
+
+        <div class="social">
+            <a target="_blank" href="https://www.linkedin.com/in/brunocelada/?locale=en_US">
+                <img loading="lazy" src="images/linkedin-logo-white.webp" alt="LinkedIn Logo">
+            </a>
+            <a target="_blank" href="https://wa.me/5493416518799">
+                <img loading="lazy" src="images/whatsapp-logo-white2.webp" alt="Whatsapp Logo">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/brunocelada/">
+                <img loading="lazy" src="images/instagram-logo-white.webp" alt="Instagram Logo">
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

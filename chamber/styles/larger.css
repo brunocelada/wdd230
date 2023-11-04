@@ -48,4 +48,14 @@
     grid-column: 1;
     position: sticky;
   }
+
+  /* Form */
+  #form-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: initial;
+  }
+  #membership-levels-desc {
+    grid-column: 1/3;
+  }
 }

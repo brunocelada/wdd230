@@ -26,4 +26,29 @@ modeButton.addEventListener("change", () => {
   demographics.forEach(data => {
     data.classList.toggle("darkmode");
   });
+
+  const prices = document.querySelectorAll(".price");
+  prices.forEach(price => {
+    price.classList.toggle("darkmode");
+  });
+
+  const mslevels = document.querySelectorAll(".mslevel");
+  mslevels.forEach(mslevel => {
+    mslevel.classList.toggle("darkmode");
+  });
+
+  const fieldsets = document.querySelectorAll("fieldset");
+  fieldsets.forEach(fieldset => {
+    fieldset.classList.toggle("darkmode");
+  });
+
+  const labels = document.querySelectorAll(".top input");
+  labels.forEach(label => {
+    label.classList.toggle("darkmode");
+  });
+
+  const textareas = document.querySelectorAll(".description");
+  textareas.forEach(textarea => {
+    textarea.classList.toggle("darkmode");
+  });
 });
