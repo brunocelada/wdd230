@@ -1,0 +1,50 @@
+{
+    "wardFamilies": [
+        {
+            "familyName": "Garcia",
+            "dateMoved": "11/9/23",
+            "numberOfRecords": 4,
+            "visitedByBishopric": true,
+            "individualMembers": [
+                {
+                    "name": "Marcelo",
+                    "gender": "Male",
+                    "birthdate": "13/5/98"
+                },
+                {
+                    "name": "Mariana",
+                    "gender": "Female",
+                    "birthdate": "11/2/99"
+                },
+                {
+                    "name": "Lucas",
+                    "gender": "Male",
+                    "birthdate": "8/3/08"
+                },
+                {
+                    "name": "Ignacio",
+                    "gender": "Male",
+                    "birthdate": "5/4/12"
+                }
+            ]
+        },
+        {
+            "familyName": "Lopez",
+            "dateMoved": "7/3/17",
+            "numberOfRecords": 2,
+            "visitedByBishopric": true,
+            "individualMembers": [
+                {
+                    "name": "Joaquin",
+                    "gender": "Male",
+                    "birthdate": "7/8/00"
+                },
+                {
+                    "name": "Alejandra",
+                    "gender": "Female",
+                    "birthdate": "1/12/97"
+                }
+            ]
+        }
+    ]
+}

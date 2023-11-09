@@ -1,0 +1,51 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Open+Sans&display=swap");
+
+:root {
+  /* Colors */
+  --main-color: #f0f6ff;
+  --main-color-transparent: #f0f6ff86;
+  --sec-color: #333;
+  --sec-color-transp: #3333337a;
+  --terc-color: #add8e6;
+  --terc-color-transp: #add8e68f;
+  --cuart-color: #dfebf7;
+  --quint-color: #a9d1e5;
+
+  /* Fonts */
+  --paragraph: Lato, "Open Sans", sans-serif;
+  --titles: "Open Sans", sans-serif;
+  --fancy-titles: "Bree Serif", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--main-color);
+    text-align: center;
+    color: var(--sec-color);
+    font-family: var(--paragraph);
+}
+h1 {
+    font-family: var(--fancy-titles);
+    font-weight: bolder;
+}
+h3 {
+    font-family: var(--titles);
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+}
+section {
+    background-color: var(--terc-color-transp);
+    border: var(--terc-color) solid 2px;
+    border-radius: 10px;
+    margin: 1rem 2%;
+}
+section img {
+    width: 95%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 2%;
+}
