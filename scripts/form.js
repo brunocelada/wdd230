@@ -1,4 +1,4 @@
-const userName = document.querySelector("#username");
+const email = document.querySelector("#email");
 const password = document.querySelector("#pwd");
 const confirmPwd = document.querySelector("#cpwd");
 const message = document.querySelector("#form-message");
@@ -8,22 +8,40 @@ const wrongDataColor = "#f9e7e7";
 const normalBGColor = "#fff";
 
 function checkSame() {
-    if (confirmPwd.value !== userName.value) {
-        message.textContent = "⚠ The confirmation of the password must match the Username value";
+    if (confirmPwd.value !== password.value) {
+        message.textContent = "⚠ Both passwords must match";
         message.style.display = "initial";
 
-        userName.style.backgroundColor = wrongDataColor;
+        password.style.backgroundColor = wrongDataColor;
         confirmPwd.style.backgroundColor = wrongDataColor;
         
-        userName.value = "";
+        password.value = "";
         confirmPwd.value ="";
-        userName.focus();
+        password.focus();
+
+        // confirmMail();
     } else {
         message.style.display = "none";
-        userName.style.backgroundColor = normalBGColor;
+        password.style.backgroundColor = normalBGColor;
         confirmPwd.style.backgroundColor = normalBGColor;
     }
 }
+
+// function confirmMail() {
+//     const emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
+//     if (!emailPattern.test(email.value)) {
+//         message.textContent = "⚠ The email must finish with '@byui.edu'.";
+//         message.style.display = "initial";
+
+//         email.style.backgroundColor = wrongDataColor;
+        
+//         email.value = "";
+//         email.focus();
+//     } else {
+//         message.style.display = "none";
+//         email.style.backgroundColor = normalBGColor;
+//     }
+// }
 
 submitBtn.addEventListener("click", checkSame);
 
