@@ -6,7 +6,7 @@ async function getMembersData(url) {
   const response = await fetch(url);
   if (response.ok) {
     const data = await response.json();
-    console.table(data.members); // check point
+    // console.table(data.members); // check point
     displayCompany(data.members);
   }
 }
@@ -26,8 +26,6 @@ const displayCompany = (members) => {
     let msLevel = document.createElement("p");
     let dateContract = document.createElement("p");
 
-    let br = document.createElement("br");
-
     name.innerText = member.companyName;
     address.innerText = member.address;
     address.classList.add("price");
@@ -37,7 +35,7 @@ const displayCompany = (members) => {
     web.innerText = "Visit site";
     web.classList.add("simple-link");
 
-    img.setAttribute("src", member.imageFileName);
+    img.setAttribute("src", member.imageFilename);
     img.setAttribute("alt", member.companyName);
     img.classList.add("company-img");
     img.setAttribute("loading", "lazy");
@@ -50,10 +48,27 @@ const displayCompany = (members) => {
     section.appendChild(address);
     section.appendChild(phoneNumber);
     section.appendChild(img);
-    section.appendChild(br);
     section.appendChild(msLevel);
     section.appendChild(dateContract);
     section.appendChild(web);
     list.appendChild(section);
   });
 };
+
+// Buttons
+const btnGrid = document.querySelector("#grid-btn");
+const btnList = document.querySelector("#list-btn");
+
+btnList.addEventListener("click", () => {
+  btnGrid.classList.remove("btn-active");
+  btnList.classList.add("btn-active");
+
+  list.classList.add("display-list")
+});
+
+btnGrid.addEventListener("click", () => {
+  btnList.classList.remove("btn-active");
+  btnGrid.classList.add("btn-active");
+
+  list.classList.remove("display-list")
+});

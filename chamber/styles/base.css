@@ -520,3 +520,36 @@ form label.top input:required:valid, form label.top textarea:required:valid {
   color: var(--dark-contrast);
  text-shadow: 2px 2px 10px var(--hero-h1-gb), -2px -2px 10px var(--hero-h1-gb);
 }
+
+/* MEMBERS PAGE */
+#display-options {
+  margin: 2%;
+  transition: var(--transition2);
+}
+#display-options button {
+  margin: 0 1rem;
+  box-sizing: border-box;
+  transition: var(--transition2);
+}
+.btn-active {
+  border: var(--contrast) 2px solid;
+}
+#members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+#members.display-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#members.display-list img{
+  display: none;
+}
+
+#members.display-list section > h2 {
+  font-size: large;
+}
+#members.display-list section:nth-child(odd){
+  background-color: var(--hero-h1-gb);
+}

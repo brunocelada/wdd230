@@ -58,4 +58,20 @@
   #membership-levels-desc {
     grid-column: 1/3;
   }
+
+  /* MEMBERS PAGE */
+  #members.display-list section {
+    display: grid;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #members.display-list section > * {
+    margin: 0;
+    padding: .2rem;
+  }
 }
