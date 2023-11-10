@@ -5,7 +5,7 @@
         "address": "Av. Principal 6543",
         "phoneNumber": "+54 341 1234567",
         "websiteUrl": "http://www.constructorarosario.com",
-        "imageFilename": "../images/fict-company-1.webp",
+        "imageFilename": "images/fict-company-1.webp",
         "membershipLevel": "Gold",
         "dateContract": "15/04/2022"
       },
@@ -23,7 +23,7 @@
         "address": "Plaza Central 112",
         "phoneNumber": "+54 341 5678901",
         "websiteUrl": "http://www.ingenieriaconstructiva.com",
-        "imageFilename": "/wdd230/chamber/images/fict-company-3.webp",
+        "imageFilename": "images/fict-company-3.webp",
         "membershipLevel": "Bronze",
         "dateContract": "22/08/2023"
       },
@@ -32,7 +32,7 @@
         "address": "Paseo de la Construcción 008",
         "phoneNumber": "+54 341 2345678",
         "websiteUrl": "http://www.construccionesmodernas.com",
-        "imageFilename": "https://brunocelada.github.io/wdd230/chamber/images/company-logo-1.webp",
+        "imageFilename": "images/company-logo-1.webp",
         "membershipLevel": "Gold",
         "dateContract": "07/02/2023"
       },
@@ -41,7 +41,7 @@
         "address": "Avenida de los Edificios 645",
         "phoneNumber": "+54 341 8765432",
         "websiteUrl": "http://www.edificacionesprogresivas.com",
-        "imageFilename": "https://brunocelada.github.io/wdd230/chamber/images/company-logo-2.webp",
+        "imageFilename": "images/company-logo-2.webp",
         "membershipLevel": "Gold",
         "dateContract": "19/06/2024"
       },
@@ -50,7 +50,7 @@
         "address": "Calle Urbanismo 890",
         "phoneNumber": "+54 341 3456789",
         "websiteUrl": "http://www.planificacionurbana.com",
-        "imageFilename": "https://brunocelada.github.io/wdd230/chamber/images/company-logo-3.webp",
+        "imageFilename": "images/company-logo-3.webp",
         "membershipLevel": "Silver",
         "dateContract": "10/12/2023"
       },
@@ -59,7 +59,7 @@
         "address": "Avenida Innovación 657",
         "phoneNumber": "+54 341 5678123",
         "websiteUrl": "http://www.arquitecturainnovadora.com",
-        "imageFilename": "https://brunocelada.github.io/wdd230/chamber/images/company-logo-4.webp",
+        "imageFilename": "images/company-logo-4.webp",
         "membershipLevel": "Bronze",
         "dateContract": "28/03/2024"
       }
