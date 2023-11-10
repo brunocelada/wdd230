@@ -5,7 +5,7 @@
         "address": "Av. Principal 6543",
         "phoneNumber": "+54 341 1234567",
         "websiteUrl": "http://www.constructorarosario.com",
-        "imageFilename": "https://brunocelada.github.io/wdd230/chamber/images/fict-company-1.webp",
+        "imageFilename": "../images/fict-company-1.webp",
         "membershipLevel": "Gold",
         "dateContract": "15/04/2022"
       },
