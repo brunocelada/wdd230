@@ -167,10 +167,16 @@ footer p {
 }
 
 /* Link styles */
-a {
+#linklist {
+  padding: 0;
+  margin: 1rem;
+  list-style: circle;
+}
+#linklist a {
   color: #193f5f;
   text-decoration: none;
+  cursor: pointer;
 }
-a:hover {
+#linklist a:hover {
   text-decoration: underline;
 }
