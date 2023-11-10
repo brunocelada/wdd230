@@ -51,4 +51,9 @@ modeButton.addEventListener("change", () => {
   textareas.forEach(textarea => {
     textarea.classList.toggle("darkmode");
   });
+
+  const simpleLinks = document.querySelectorAll(".simple-link");
+  simpleLinks.forEach(link => {
+    link.classList.toggle("darkmode");
+  });
 });

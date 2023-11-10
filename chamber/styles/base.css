@@ -15,6 +15,7 @@
 
   --switcher-size: 1rem;
   --transition: color 0.1s, background-color 0.2s ease-in-out;
+  --transtition2: all 300ms ease-out;
 }
 
 body {
@@ -41,7 +42,7 @@ button {
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: none;
-  transition: all 200ms ease-out;
+  transition: var(--transtition2);
 }
 button:hover {
   box-shadow: var(--third-color) 1px 1px 6px, var(--third-color) -1px -1px 6px;
@@ -61,7 +62,7 @@ h1, h2, h3, h4 {
   border-radius: 100%;
   margin: 0.3rem;
   opacity: .7;
-  transition: all 200ms ease-out;
+  transition: var(--transtition2);
 }
 #logo:hover {
   opacity: 1;
@@ -159,7 +160,7 @@ input:checked + .slider:before {
   padding: .5rem 2rem;
   font-weight: bold;
   text-decoration: none;
-  transition: all 200ms ease-out;
+  transition: var(--transtition2);
 }
 .navigation a:hover {
   background-color: var(--third-color);
@@ -202,7 +203,7 @@ a.active {
   width: 100%;
   max-height: 350px;
   object-fit: cover;
-  transition: all 200ms ease-out;
+  transition: var(--transtition2);
 }
 
 /* EVENT SECTION */
@@ -335,13 +336,13 @@ footer a:hover {
   padding: 1rem;
   text-align: justify;
 }
-.company a {
+.company a, .simple-link {
   text-decoration: underline;
   color: var(--dark-contrast);
   text-align: right;
   transition: var(--transition);
 }
-.company a:hover {
+.company a:hover, .simple-link:hover {
   color: var(--contrast);
 }
 /* Sidebar */
@@ -354,10 +355,11 @@ footer a:hover {
 .company.darkmode, .demographic.darkmode {
   background-color: #2f4550;
 }
-.company.darkmode a {
+.company.darkmode a, .simple-link.darkmode {
   color: var(--sec-color);
+  background-color: rgb(0, 0, 0, 0);
 }
-.company.darkmode a:hover {
+.company.darkmode a:hover, .simple-link.darkmode:hover {
   color: var(--main-background);
 }
 .demographic img {
@@ -478,7 +480,7 @@ form label.top input:required:valid, form label.top textarea:required:valid {
   border: 1px solid var(--contrast);
   border-radius: 5px;
   padding: 2% 5%;
-  transition: var(--transition);
+  transition: var(--transition2);
 }
 .mslevel.darkmode {
   background-color: var(--contrast);
@@ -488,7 +490,7 @@ form label.top input:required:valid, form label.top textarea:required:valid {
   font-weight: bolder;
   font-style: italic;
   color: var(--contrast);
-  transition: 300ms ease-in-out;
+  transition: var(--transition2);
 }
 .price:hover {
   color: var(--dark-contrast);
