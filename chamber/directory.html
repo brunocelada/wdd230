@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Celada">
+    <meta name="description"
+      content="Directory page for the Rosario Chamber of Commerce business. 
+            A Rosario local organization that gathers construction 
+            business leaders working in the community.">
+    <title>Rosario Chamber of Commerce | Directory</title>
+
+    <meta property="og:title" content="Rosario Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://comisiondefilmacionessf.gob.ar/wp-content/uploads/2021/09/DSC0880-scaled.jpg">
+    <meta property="og:url" content="https://brunocelada.github.io/wdd230/chamber/index.html">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/rosario-chamber-logo-removebg.webp" alt="Chamber Logo" id="logo">
+        </a>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">HOME</a>
+            <a href="discover.html">DISCOVER</a>
+            <a href="directory.html" class="active">DIRECTORY</a>
+            <a href="join.html">JOIN</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cards"></div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <a href="mailto:brunocelada@churchofjesuschrist.org">brunocelada@churchofjesuschrist.org</a> <br>
+            <a target="_blank" href="https://wa.me/5493416518799">+54 9 341 6518799</a>
+            <p>&COPY;<span id="current-year"></span> | Bruno Celada | Rosario, Argentina<br>Project for WDD 230 Course (BYUI)</p>
+            <p id="lastModified"></p>
+        </div>
+
+        <div class="social">
+            <a target="_blank" href="https://www.linkedin.com/in/brunocelada/?locale=en_US">
+                <img loading="lazy" src="images/linkedin-logo-white.webp" alt="LinkedIn Logo">
+            </a>
+            <a target="_blank" href="https://wa.me/5493416518799">
+                <img loading="lazy" src="images/whatsapp-logo-white2.webp" alt="Whatsapp Logo">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/brunocelada/">
+                <img loading="lazy" src="images/instagram-logo-white.webp" alt="Instagram Logo">
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
