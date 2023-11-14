@@ -145,8 +145,13 @@ main {
 .label {
   font-style: italic;
 }
-#visits, #temperature, #weather {
+#visits {
   font-style: italic;
+}
+/* weather */
+figure {
+  display: flex;
+  align-items: center;
 }
 
 .map {
