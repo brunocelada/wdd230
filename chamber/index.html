@@ -45,12 +45,6 @@
         <div id="hero">
             <h1>Rosario Chamber of Commerce</h1>
             <button id="join-button">JOIN THE CHAMBER</button>
-            <!-- provisional picture -->
-            <!-- <picture class="hero-img">
-                <source media="(max-width: 640px)" srcset="images/hero-small.webp">
-                <source media="(max-width: 1200px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-large.webp" alt="Hero Image" style="max-height: 750px; object-fit: cover; width: 100%;">
-            </picture> -->
             <picture class="hero-img">
                 <source media="(max-width: 640px)" srcset="images/hero2-small.webp">
                 <source media="(max-width: 1200px)" srcset="images/hero2-medium.webp">
@@ -58,6 +52,8 @@
             </picture>
         </div>
        
+        <div id="banner"></div>
+
         <section class="events"> <!-- Will be replaced -->
             <h2>EVENTS</h2>
             <img src="images/event-1.webp" alt="Event model 1" style="width: 100%;">
@@ -67,25 +63,35 @@
         </section>
 
         <hr> 
-        <section class="weather"> <!-- Will be replaced -->
+        <section class="weather">
             <h2>WEATHER</h2>
             <h3>Rosario Argentina</h3>
-            <span>Temperature: </span><span id="temperature">45</span><span>°F</span> <br>
-            <span>Windspeed: </span><span id="windspeed">10</span><span>mph</span>
+            <div id="actual-weather">
+                <figure class="weather-card">
+                    <img id="weather-icon" src="#" alt="Weather-Icon">
+                    <span id="temperature"></span>
+                    <span id="windspeed"></span>
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            
+            <h3>3-Days Forecast</h3>
+            <div id="days-forecast">
+            </div>
         </section>
 
         <hr> 
-        <section class="companies"> <!-- Will be replaced -->
+        <section class="companies">
             <h2>COMPANIES</h2>
-            <a loading="lazy" width="200" height="200" href="images/fict-company-3.webp" target="_blank"><img src="images/fict-company-3.webp" alt="Company Image 3" class="company-img"></a>
-            <a loading="lazy" width="200" height="200" href="images/fict-company-4.webp" target="_blank"><img src="images/fict-company-4.webp" alt="Company Image 4" class="company-img"></a>
-            <a loading="lazy" width="200" height="200" href="images/fict-company-2.webp" target="_blank"><img src="images/fict-company-2.webp" alt="Company Image 2" class="company-img"></a>
-            <a loading="lazy" width="200" height="200" href="images/fict-company-1.webp" target="_blank"><img src="images/fict-company-1.webp" alt="Company Image 1" class="company-img"></a>
-            <a loading="lazy" width="200" height="200" href="images/fict-company-5.webp" target="_blank"><img src="images/fict-company-5.webp" alt="Company Image 5" class="company-img"></a>
+            <a href="images/fict-company-3.webp" target="_blank"><img loading="lazy" width="200" height="200" src="images/fict-company-3.webp" alt="Company Image 3" class="company-img"></a>
+            <a href="images/fict-company-4.webp" target="_blank"><img loading="lazy" width="200" height="200" src="images/fict-company-4.webp" alt="Company Image 4" class="company-img"></a>
+            <a href="images/fict-company-2.webp" target="_blank"><img loading="lazy" width="200" height="200" src="images/fict-company-2.webp" alt="Company Image 2" class="company-img"></a>
+            <a href="images/fict-company-1.webp" target="_blank"><img loading="lazy" width="200" height="200" src="images/fict-company-1.webp" alt="Company Image 1" class="company-img"></a>
+            <a href="images/fict-company-5.webp" target="_blank"><img loading="lazy" width="200" height="200" src="images/fict-company-5.webp" alt="Company Image 5" class="company-img"></a>
         </section>
 
         <hr> 
-        <section class="spotlights"> <!-- Will be replaced -->
+        <section class="spotlights">
             <h2>REVIEWS</h2>
             <div class="review">
                 <img loading="lazy" width="50" height="50" src="images/company-logo-1.webp" alt="Company Logo 1" class="review-img">

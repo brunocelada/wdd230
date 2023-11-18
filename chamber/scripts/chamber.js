@@ -56,4 +56,11 @@ modeButton.addEventListener("change", () => {
   simpleLinks.forEach(link => {
     link.classList.toggle("darkmode");
   });
+
+  const weatherFigures = document.querySelectorAll("figure");
+  weatherFigures.forEach(figure => {
+    figure.classList.toggle("darkmode");
+  });
+
+  document.querySelector("#banner").classList.toggle("darkmode");
 });

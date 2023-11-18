@@ -41,6 +41,11 @@
     grid-column: 1/4;
   }
 
+    /* Weather */
+    #days-forecast {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
   /* company */
   .companies {
     grid-template-columns: repeat(3, 1fr);
