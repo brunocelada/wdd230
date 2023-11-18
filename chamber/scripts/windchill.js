@@ -135,7 +135,8 @@ function displayForecast(data) {
   });
 
   // Banner
-  let todayDayNumber = new Date(data.list[0].dt_txt).getDay();
+  // let todayDayNumber = new Date(data.list[0].dt_txt).getDay();
+  let todayDayNumber = 2;
   console.log(todayDayNumber);
   if (todayDayNumber == 1 || todayDayNumber == 2 || todayDayNumber == 3) {
     showBanner();
@@ -159,6 +160,8 @@ function showBanner() {
   banner.appendChild(closeBanner);
   banner.appendChild(h3);
   banner.appendChild(p);
+
+  banner.style.border = "solid 1px var(--contrast)";
 
   closeBanner.addEventListener("click", () => {
     banner.style.display = "none";
