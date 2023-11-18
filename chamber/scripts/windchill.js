@@ -146,7 +146,6 @@ function displayForecast(data) {
 
   // Banner
   let todayDayNumber = new Date(data.list[0].dt_txt).getDay();
-  console.log(todayDayNumber);
   if (todayDayNumber == 1 || todayDayNumber == 2 || todayDayNumber == 3) {
     showBanner();
   }
