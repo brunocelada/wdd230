@@ -81,6 +81,7 @@ header {
   display: none;
   color: var(--sec-color);
   padding: 1rem;
+  text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
 }
