@@ -51,7 +51,10 @@ button:hover {
 button:active {
   background-color: var(--sec-color);
 }
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--heading-font);
 }
 
@@ -61,13 +64,13 @@ h1, h2, h3, h4 {
   max-width: 50px;
   border-radius: 100%;
   margin: 0.3rem;
-  opacity: .7;
+  opacity: 0.7;
   transition: var(--transtition2);
 }
 #logo:hover {
   opacity: 1;
 }
-header a{
+header a {
   text-decoration: none;
 }
 
@@ -80,7 +83,7 @@ header a{
   width: calc(var(--switcher-size) * 2.5);
   height: calc(var(--switcher-size) * 1.3);
 }
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -93,19 +96,19 @@ header a{
   right: 0;
   bottom: 0;
   background-color: var(--main-background);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .slider:before {
   position: absolute;
   content: "";
   height: var(--switcher-size);
   width: var(--switcher-size);
-  left: calc(var(--switcher-size) * .2);
-  bottom: calc(var(--switcher-size) * .15);
+  left: calc(var(--switcher-size) * 0.2);
+  bottom: calc(var(--switcher-size) * 0.15);
   background-color: var(--third-color);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 input:checked + .slider {
   background-color: var(--dark-contrast);
@@ -147,7 +150,7 @@ input:checked + .slider:before {
 
 /* Banner */
 #banner {
-  padding: .1rem 1rem;
+  padding: 0.1rem 1rem;
   margin: 0 3rem;
   border-radius: 10px;
   display: grid;
@@ -163,9 +166,10 @@ input:checked + .slider:before {
   align-self: center;
   justify-self: left;
 }
-#banner p, #banner h3 {
+#banner p,
+#banner h3 {
   margin: 0;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 /* Navigation */
@@ -180,7 +184,7 @@ input:checked + .slider:before {
   display: none;
   font-family: var(--heading-font);
   color: var(--main-background);
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   font-weight: bold;
   text-decoration: none;
   transition: var(--transtition2);
@@ -209,7 +213,8 @@ a.active {
   top: 0;
   left: 0;
   right: 0;
-  text-shadow: var(--dark-contrast) 1px 1px 4px, var(--dark-contrast) -1px -1px 4px;
+  text-shadow: var(--dark-contrast) 1px 1px 4px,
+    var(--dark-contrast) -1px -1px 4px;
   border-radius: 10px;
   margin: 1rem 0;
 }
@@ -219,7 +224,7 @@ a.active {
   bottom: 2rem;
   right: 0;
   margin: 0 25%;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   justify-self: center;
 }
 .hero-img {
@@ -237,14 +242,14 @@ a.active {
 }
 
 /* WEATHER SECTION */
-.weather>div {
+.weather > div {
   display: grid;
 }
 .weather div {
   border-radius: 10px;
   margin: 0 2rem;
 }
-.weather figure{
+.weather figure {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,7 +284,7 @@ a.active {
   width: 100%;
   max-width: 200px;
   transition: all 400ms ease-out;
-  filter: blur(.5px);
+  filter: blur(0.5px);
   border-radius: 10px;
 }
 .company-img:hover {
@@ -355,7 +360,7 @@ footer a:hover {
 
 /* DISCOVER PAGE */
 #discover {
-  margin: 1rem .5rem;
+  margin: 1rem 0.5rem;
   display: block;
 }
 .company {
@@ -372,7 +377,9 @@ footer a:hover {
   opacity: 1;
   border-radius: 3px;
 }
-.company h3, .company p, .company a {
+.company h3,
+.company p,
+.company a {
   grid-column: 2;
 }
 .company h3 {
@@ -380,17 +387,20 @@ footer a:hover {
   font-size: 2em;
   font-family: var(--heading-font);
 }
-.company p, .demographic p {
+.company p,
+.demographic p {
   padding: 1rem;
   text-align: justify;
 }
-.company a, .simple-link {
+.company a,
+.simple-link {
   text-decoration: underline;
   color: var(--dark-contrast);
   text-align: right;
   transition: var(--transition);
 }
-.company a:hover, .simple-link:hover {
+.company a:hover,
+.simple-link:hover {
   color: var(--contrast);
 }
 /* Sidebar */
@@ -400,14 +410,17 @@ footer a:hover {
   background-color: white;
   box-shadow: 1px 1px 4px var(--hero-h1-gb), -1px -1px 4px var(--hero-h1-gb);
 }
-.company.darkmode, .demographic.darkmode {
+.company.darkmode,
+.demographic.darkmode {
   background-color: #2f4550;
 }
-.company.darkmode a, .simple-link.darkmode {
+.company.darkmode a,
+.simple-link.darkmode {
   color: var(--sec-color);
   background-color: rgb(0, 0, 0, 0);
 }
-.company.darkmode a:hover, .simple-link.darkmode:hover {
+.company.darkmode a:hover,
+.simple-link.darkmode:hover {
   color: var(--main-background);
 }
 .demographic img {
@@ -429,7 +442,7 @@ form {
   padding: 0 2%;
   border-radius: 5px;
 }
-form fieldset{
+form fieldset {
   margin: 2rem 0;
   border: 1px solid var(--contrast);
   border-radius: 5px;
@@ -445,20 +458,21 @@ form legend {
   font-weight: bold;
   font-size: larger;
   margin: 0 1rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 form label.top {
   display: block;
-  padding-top: .6rem;
+  padding-top: 0.6rem;
   font-size: 1rem;
 }
-form label.top input, form label.top textarea {
+form label.top input,
+form label.top textarea {
   -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: 1px solid var(--contrast);
   border-radius: 3px;
-  padding: .7rem;
+  padding: 0.7rem;
   color: var(--dark-contrast);
   width: 100%;
   max-width: 20rem;
@@ -466,13 +480,14 @@ form label.top input, form label.top textarea {
   box-sizing: border-box;
   transition: var(--transition);
 }
-form label.top input.darkmode, form label.top textarea.darkmode {
+form label.top input.darkmode,
+form label.top textarea.darkmode {
   background-color: rgb(235, 235, 235);
 }
 form label.msoption {
   display: block;
   font-size: 1.2rem;
-  padding: .7rem 0;
+  padding: 0.7rem 0;
 }
 .submitBtn {
   border: none;
@@ -480,17 +495,19 @@ form label.msoption {
   width: 96%;
   max-width: 20rem;
   border-radius: 5px;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   color: var(--dark-contrast);
   font-family: var(--heading-font);
   font-weight: bold;
   font-size: large;
   margin: 0 0 3rem 2%;
 }
-form label.top input:required, form label.top textarea:required {
+form label.top input:required,
+form label.top textarea:required {
   border-left: 5px solid red;
 }
-form label.top input:required:valid, form label.top textarea:required:valid {
+form label.top input:required:valid,
+form label.top textarea:required:valid {
   border-left: solid 5px green;
 }
 
@@ -517,14 +534,15 @@ form label.top input:required:valid, form label.top textarea:required:valid {
 #membership-levels-desc p {
   text-align: justify;
 }
-#membership-levels img:hover, #membership-levels-desc img:hover {
+#membership-levels img:hover,
+#membership-levels-desc img:hover {
   transform: scale(1.1);
 }
 #membership-levels h3 {
   text-align: center;
 }
 .mslevel {
-  margin: 1rem .4rem;
+  margin: 1rem 0.4rem;
   border: 1px solid var(--contrast);
   border-radius: 5px;
   padding: 2% 5%;
@@ -558,7 +576,7 @@ form label.top input:required:valid, form label.top textarea:required:valid {
 #form-sent {
   height: 90vh;
 }
-#form-sent a{
+#form-sent a {
   font-family: var(--heading-font);
   text-decoration: underline;
   font-size: 1.7rem;
@@ -566,7 +584,7 @@ form label.top input:required:valid, form label.top textarea:required:valid {
 }
 #form-sent a:hover {
   color: var(--dark-contrast);
- text-shadow: 2px 2px 10px var(--hero-h1-gb), -2px -2px 10px var(--hero-h1-gb);
+  text-shadow: 2px 2px 10px var(--hero-h1-gb), -2px -2px 10px var(--hero-h1-gb);
 }
 
 /* MEMBERS PAGE */
@@ -591,13 +609,13 @@ form label.top input:required:valid, form label.top textarea:required:valid {
   flex-direction: column;
   text-align: left;
 }
-#members.display-list img{
+#members.display-list img {
   display: none;
 }
 
 #members.display-list section > h2 {
   font-size: large;
 }
-#members.display-list section:nth-child(odd){
+#members.display-list section:nth-child(odd) {
   background-color: var(--hero-h1-gb);
 }

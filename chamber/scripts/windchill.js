@@ -45,7 +45,7 @@ function displayWeather(data) {
 
 // Windspeed
 const windspeedDisplay = document.querySelector("#windspeed");
-const actualWeather = document.querySelector(".weather-card")
+const actualWeather = document.querySelector(".weather-card");
 
 function temperatureConversor(value, mode) {
   if (mode) {
@@ -73,12 +73,11 @@ function calculateWindChill(temp, windsp) {
 
   if (limitTemp <= 50 && limitWindSpeed > 3) {
     return (
-      (35.74 +
-        0.6215 * temp -
-        35.75 * Math.pow(windsp, 0.16) +
-        0.4275 * temp * Math.pow(windsp, 0.16)
-      ).toFixed(2)
-    );
+      35.74 +
+      0.6215 * temp -
+      35.75 * Math.pow(windsp, 0.16) +
+      0.4275 * temp * Math.pow(windsp, 0.16)
+    ).toFixed(2);
   } else {
     return "N/A";
   }
@@ -100,7 +99,15 @@ function displayWindChill(temp, windspeedValue) {
 // Forecast
 const forecast = document.querySelector("#days-forecast");
 
-const wordDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const wordDays = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
 function displayForecast(data) {
   let listOfDays = [];
@@ -109,8 +116,8 @@ function displayForecast(data) {
     listOfDays.push(data.list[index * 8]);
   }
 
-  listOfDays.forEach(day => {
-    let futureDayNumber = new Date(day.dt_txt).getDate()
+  listOfDays.forEach((day) => {
+    let futureDayNumber = new Date(day.dt_txt).getDate();
 
     const wordDay = [wordDays[new Date(day.dt_txt).getDay()]];
 
@@ -119,7 +126,10 @@ function displayForecast(data) {
 
     let figure = document.createElement("figure");
     let weatherIcon = document.createElement("img");
-    weatherIcon.setAttribute("src", `https://openweathermap.org/img/w/${day.weather[0].icon}.png`)
+    weatherIcon.setAttribute(
+      "src",
+      `https://openweathermap.org/img/w/${day.weather[0].icon}.png`
+    );
 
     let displayTemp = document.createElement("span");
     displayTemp.innerHTML = `${wordDay} ${roundedTemp} &deg;C`;
@@ -135,17 +145,12 @@ function displayForecast(data) {
   });
 
   // Banner
-  // let todayDayNumber = new Date(data.list[0].dt_txt).getDay();
-  let todayDayNumber = 2;
+  let todayDayNumber = new Date(data.list[0].dt_txt).getDay();
   console.log(todayDayNumber);
   if (todayDayNumber == 1 || todayDayNumber == 2 || todayDayNumber == 3) {
     showBanner();
   }
-  else {
-    banner.style.display = "none";
-  }
 }
-
 
 function showBanner() {
   const h3 = document.createElement("h3");
@@ -153,8 +158,8 @@ function showBanner() {
   const closeBanner = document.createElement("button");
   closeBanner.id = "closeBanner";
 
-  h3.innerHTML = "Rosario Chamber of Commerce meet and greet!"
-  p.innerHTML = "Attend on Wednesday at 7:00 p.m."
+  h3.innerHTML = "Rosario Chamber of Commerce meet and greet!";
+  p.innerHTML = "Attend on Wednesday at 7:00 p.m.";
   closeBanner.innerHTML = "✖";
 
   banner.appendChild(closeBanner);
@@ -167,4 +172,3 @@ function showBanner() {
     banner.style.display = "none";
   });
 }
-
