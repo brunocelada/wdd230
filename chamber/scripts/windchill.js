@@ -2,6 +2,7 @@
 const currentTemp = document.querySelector("#temperature");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
+const banner = document.querySelector("#banner");
 
 const APIkey = "3bd560edd98e4bff73765176414d6a5d";
 const lat = "-32.95999066939326";
@@ -134,13 +135,16 @@ function displayForecast(data) {
   });
 
   // Banner
-  let todayDayNumber = 1
-  // let todayDayNumber = new Date(data.list[0].dt_txt).getDay();
+  let todayDayNumber = new Date(data.list[0].dt_txt).getDay();
+  console.log(todayDayNumber);
   if (todayDayNumber == 1 || todayDayNumber == 2 || todayDayNumber == 3) {
     showBanner();
   }
+  else {
+    banner.style.display = "none";
+  }
 }
-const banner = document.querySelector("#banner");
+
 
 function showBanner() {
   const h3 = document.createElement("h3");
