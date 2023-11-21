@@ -18,25 +18,6 @@ if (numVisits === 0) {
 }}
 
 // Setters
-console.log("Number of visits: " + numVisits)
 numVisits++;
 localStorage.setItem("numVisitsSaved", numVisits);
 localStorage.setItem("dateVisitSaved", today);
-
-
-// Day test
-const sampleDay = new Date();
-const day = 25; sampleDay.setDate(day);
-const month = 9; sampleDay.setMonth(month); // October 
-const year = 2023; sampleDay.setFullYear(year);
-
-console.log("Sample Day: " + sampleDay);
-let difference = today - sampleDay;
-
-if (difference < msToDays) {
-    console.log("Status: less than a day")
-    
-  } else {
-    console.log("Status: more or equal than a day")
-  }
-console.log("Sample distance in days: " + (difference / msToDays).toFixed(0));

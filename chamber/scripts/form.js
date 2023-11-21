@@ -18,6 +18,5 @@ function setTimestamp() {
     const timestampField = document.querySelector("#timestamp");
     if (timestampField) {
         timestampField.value = getCurrentDateTime();
-        console.log(timestampField.value);
     }
 }

@@ -267,7 +267,7 @@ a.active {
   border: var(--sec-color) solid 1px;
   background-color: var(--sec-color);
   border-radius: 10px;
-  margin: 0 1%;
+  margin: 2px 1%;
   padding: 1rem;
 }
 

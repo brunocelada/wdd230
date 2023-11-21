@@ -7,7 +7,8 @@
         "websiteUrl": "http://www.constructorarosario.com",
         "imageFilename": "images/fict-company-1.webp",
         "membershipLevel": "Gold",
-        "dateContract": "15/04/2022"
+        "dateContract": "15/04/2022",
+        "comment" : "1"
       },
       {
         "companyName": "Obras y Proyectos Excelencia",
@@ -16,7 +17,8 @@
         "websiteUrl": "http://www.obrasexcelencia.com",
         "imageFilename": "images/fict-company-2.webp",
         "membershipLevel": "Silver",
-        "dateContract": "03/11/2022"
+        "dateContract": "03/11/2022",
+        "comment" : "22sdf3"
       },
       {
         "companyName": "Ingeniería Constructiva del Sur",
@@ -25,7 +27,8 @@
         "websiteUrl": "http://www.ingenieriaconstructiva.com",
         "imageFilename": "images/fict-company-3.webp",
         "membershipLevel": "Bronze",
-        "dateContract": "22/08/2023"
+        "dateContract": "22/08/2023",
+        "comment" : "34sd13"
       },
       {
         "companyName": "Construcciones Modernas SRL",
@@ -34,7 +37,8 @@
         "websiteUrl": "http://www.construccionesmodernas.com",
         "imageFilename": "images/fict-company-4.webp",
         "membershipLevel": "Gold",
-        "dateContract": "07/02/2023"
+        "dateContract": "07/02/2023",
+        "comment" : "1we3c231"
       },
       {
         "companyName": "Edificaciones Progresivas SA",
@@ -43,7 +47,8 @@
         "websiteUrl": "http://www.edificacionesprogresivas.com",
         "imageFilename": "images/fict-company-5.webp",
         "membershipLevel": "Gold",
-        "dateContract": "19/06/2024"
+        "dateContract": "19/06/2024",
+        "comment" : "12sdf3"
       },
       {
         "companyName": "Planificación Urbana Rosarina",
@@ -52,7 +57,8 @@
         "websiteUrl": "http://www.planificacionurbana.com",
         "imageFilename": "images/fict-company-6.webp",
         "membershipLevel": "Silver",
-        "dateContract": "10/12/2023"
+        "dateContract": "10/12/2023",
+        "comment" : "12vd"
       },
       {
         "companyName": "Arquitectura Innovadora SA",
@@ -61,7 +67,8 @@
         "websiteUrl": "http://www.arquitecturainnovadora.com",
         "imageFilename": "images/hero-img-1.webp",
         "membershipLevel": "Bronze",
-        "dateContract": "28/03/2024"
+        "dateContract": "28/03/2024",
+        "comment" : "sdfsd"
       }
     ]
   }
