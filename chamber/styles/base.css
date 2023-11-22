@@ -312,9 +312,6 @@ a.active {
   max-width: 50px;
   border-radius: 10px;
 }
-.author {
-  font-style: italic;
-}
 .company-name {
   font-weight: bold;
   text-align: center;
