@@ -49,3 +49,15 @@ const displaySpotlight = (members) => {
   });
 };
 
+// BUTTONS
+const joinBtn = document.querySelector("#join-button");
+const infoEvent = document.querySelector(".info-button");
+
+joinBtn.addEventListener("click", () => {
+  open("join.html");
+});
+
+infoEvent.addEventListener("click", () => {
+  open("event.html");
+});
+

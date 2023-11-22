@@ -57,6 +57,9 @@ h3,
 h4 {
   font-family: var(--heading-font);
 }
+p, li {
+  line-height: 1.5rem;
+}
 
 /* Logo */
 #logo {
@@ -615,4 +618,23 @@ form label.top textarea:required:valid {
 }
 #members.display-list section:nth-child(odd) {
   background-color: var(--hero-h1-gb);
+}
+
+/* EVENT PAGE */
+.event-img {
+  width: 75%;
+  max-height: 500px;
+  object-fit: cover;
+}
+.event-info {
+  text-align: justify;
+  margin: 1rem 2rem;
+}
+.event-highlight {
+  font-weight: bold;
+  font-size: large;
+  font-family: var(--heading-font);
+}
+.event-span {
+  font-weight: bold;
 }
