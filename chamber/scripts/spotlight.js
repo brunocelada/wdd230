@@ -14,12 +14,19 @@ async function getMembersData(url) {
 getMembersData(url);
 
 const displaySpotlight = (members) => {
+  const filterList = [];
+  members.forEach((member) => {
+    if (member.membershipLevel == "Gold" || member.membershipLevel == "Silver") {
+      filterList.push(member);
+    }
+  });
+
     const randomListItems = [];
     for (let i = 0; i < 3; i++) {
-        let randonNumber = Math.floor(Math.random() * members.length);
-        let randomMember = members[randonNumber];
+        let randonNumber = Math.floor(Math.random() * filterList.length);
+        let randomMember = filterList[randonNumber];
         randomListItems.push(randomMember);
-        members.splice(randonNumber, 1)
+        filterList.splice(randonNumber, 1)
     }
 
     
