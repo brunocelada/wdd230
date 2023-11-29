@@ -1,0 +1,31 @@
+{
+    "images" : [
+        {
+            "src" : "images/island1",
+            "alt" : "Cozumel Island"
+        },
+        {
+            "src" : "images/facility1",
+            "alt" : "Centro de Cozumel facility"
+        },
+        {
+            "src" : "images/island2",
+            "alt" : "Cozumel Island"
+        },{
+            "src" : "images/facility2",
+            "alt" : "Centro de Cozumel facility"
+        },{
+            "src" : "images/island3",
+            "alt" : "Cozumel Island"
+        },{
+            "src" : "images/facility3",
+            "alt" : "Playa del Carmen-Cozumel Ferry facility"
+        },{
+            "src" : "images/island4",
+            "alt" : "Cozumel Island"
+        },{
+            "src" : "images/facility4",
+            "alt" : "Playa del Carmen-Cozumel Ferry facility"
+        }
+    ]
+}
