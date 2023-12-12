@@ -4,18 +4,18 @@
             "type": "schooter",
             "name": "Honda Metropolitan",
             "details": "49cc",
-            "max-persons": 1,
+            "maxPersons": 1,
             "img" : "images/Honda-Metropolitan.webp",
             "reservation": [
                 {
-                    "half-day": 20,
-                    "full-day": 30
+                    "halfDay": 20,
+                    "fullDay": 30
                 }
             ],
             "walkIn": [
                 {
-                    "half-day": 25,
-                    "full-day": 35
+                    "halfDay": 25,
+                    "fullDay": 35
                 }
             ]
         },
@@ -23,18 +23,18 @@
             "type": "schooter",
             "name": "Honda Dio",
             "details": "110cc",
-            "max-persons": 2,
+            "maxPersons": 2,
             "img" : "images/Honda-Dio.webp",
             "reservation": [
                 {
-                    "half-day": 30,
-                    "full-day": 40
+                    "halfDay": 30,
+                    "fullDay": 40
                 }
             ],
             "walkIn": [
                 {
-                    "half-day": 35,
-                    "full-day": 45
+                    "halfDay": 35,
+                    "fullDay": 45
                 }
             ]
         },
@@ -42,18 +42,18 @@
             "type": "schooter",
             "name": "Honda PCX150",
             "details": "149cc",
-            "max-persons": 2,
+            "maxPersons": 2,
             "img" : "images/Honda-PCX150.webp",
             "reservation": [
                 {
-                    "half-day": 40,
-                    "full-day": 50
+                    "halfDay": 40,
+                    "fullDay": 50
                 }
             ],
             "walkIn": [
                 {
-                    "half-day": 45,
-                    "full-day": 55
+                    "halfDay": 45,
+                    "fullDay": 55
                 }
             ]
         },
@@ -61,18 +61,18 @@
             "type": "atv",
             "name": "Honda Pioneer",
             "details": "Model: 1000",
-            "max-persons": 4,
+            "maxPersons": 4,
             "img" : "images/Honda-Pioneer-1000.webp",
             "reservation": [
                 {
-                    "half-day": 50,
-                    "full-day": 70
+                    "halfDay": 50,
+                    "fullDay": 70
                 }
             ],
             "walkIn": [
                 {
-                    "half-day": 60,
-                    "full-day": 80
+                    "halfDay": 60,
+                    "fullDay": 80
                 }
             ]
         },
@@ -80,18 +80,18 @@
             "type": "jeep",
             "name": "Jeep Wrangler",
             "details": "4 door, manuel, with A/C",
-            "max-persons": 5,
+            "maxPersons": 5,
             "img" : "images/Jeep-Wrangler-4door.webp",
             "reservation": [
                 {
-                    "half-day": 70,
-                    "full-day": 100
+                    "halfDay": 70,
+                    "fullDay": 100
                 }
             ],
             "walkIn": [
                 {
-                    "half-day": 85,
-                    "full-day": 125
+                    "halfDay": 85,
+                    "fullDay": 125
                 }
             ]
         },
@@ -99,18 +99,18 @@
             "type": "jeep",
             "name": "Jeep Wrangler",
             "details": "2 door, open air, manuel",
-            "max-persons": 4,
+            "maxPersons": 4,
             "img" : "images/Jeep-Wrangler-2door.webp",
             "reservation": [
                 {
-                    "half-day": 60,
-                    "full-day": 85
+                    "halfDay": 60,
+                    "fullDay": 85
                 }
             ],
             "walkIn": [
                 {
-                    "half-day": 70,
-                    "full-day": 90
+                    "halfDay": 70,
+                    "fullDay": 90
                 }
             ]
         }
