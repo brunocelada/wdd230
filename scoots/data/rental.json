@@ -1,114 +1,110 @@
 {
-    "rentals" : [
+    "rentals": [
         {
-            "scooters" : [
+            "type": "schooter",
+            "name": "Honda Metropolitan",
+            "details": "49cc",
+            "max-persons": 1,
+            "reservation": [
                 {
-                    "name" : "Honda Metropolitan",
-                    "details" :  "49cc",
-                    "max-persons" : 1,
-                    "reservation" : [
-                        {
-                            "half-day" : 20,
-                            "full-day" : 30
-                        }
-                    ],
-                    "walk-in" : [
-                        {
-                            "half-day" : 25,
-                            "full-day" : 35
-                        }
-                    ]
-                },
+                    "half-day": 20,
+                    "full-day": 30
+                }
+            ],
+            "walk-in": [
                 {
-                    "name" : "Honda Dio",
-                    "details" :  "110cc",
-                    "max-persons" : 2,
-                    "reservation" : [
-                        {
-                            "half-day" : 30,
-                            "full-day" : 40
-                        }
-                    ],
-                    "walk-in" : [
-                        {
-                            "half-day" : 35,
-                            "full-day" : 45
-                        }
-                    ]
-                },
-                {
-                    "name" : "Honda PCX150",
-                    "details" :  "149cc",
-                    "max-persons" : 2,
-                    "reservation" : [
-                        {
-                            "half-day" : 40,
-                            "full-day" : 50
-                        }
-                    ],
-                    "walk-in" : [
-                        {
-                            "half-day" : 45,
-                            "full-day" : 55
-                        }
-                    ]
+                    "half-day": 25,
+                    "full-day": 35
                 }
             ]
         },
         {
-            "atvs" : {
-                "name" : "Honda Pioneer",
-                "details" :  "Model: 1000",
-                "max-persons" : 4,
-                "reservation" : [
-                    {
-                        "half-day" : 50,
-                        "full-day" : 70
-                    }
-                ],
-                "walk-in" : [
-                    {
-                        "half-day" : 60,
-                        "full-day" : 80
-                    }
-                ]
-            }
+            "type": "schooter",
+            "name": "Honda Dio",
+            "details": "110cc",
+            "max-persons": 2,
+            "reservation": [
+                {
+                    "half-day": 30,
+                    "full-day": 40
+                }
+            ],
+            "walk-in": [
+                {
+                    "half-day": 35,
+                    "full-day": 45
+                }
+            ]
         },
         {
-            "jeeps" : [
+            "type": "schooter",
+            "name": "Honda PCX150",
+            "details": "149cc",
+            "max-persons": 2,
+            "reservation": [
                 {
-                    "name" : "Jeep Wrangler",
-                    "details" :  "4 door, manuel, with A/C",
-                    "max-persons" : 5,
-                    "reservation" : [
-                        {
-                            "half-day" : 70,
-                            "full-day" : 100
-                        }
-                    ],
-                    "walk-in" : [
-                        {
-                            "half-day" : 85,
-                            "full-day" : 125
-                        }
-                    ]
-                },
+                    "half-day": 40,
+                    "full-day": 50
+                }
+            ],
+            "walk-in": [
                 {
-                    "name" : "Jeep Wrangler",
-                    "details" :  "2 door, open air, manuel",
-                    "max-persons" : 4,
-                    "reservation" : [
-                        {
-                            "half-day" : 60,
-                            "full-day" : 85
-                        }
-                    ],
-                    "walk-in" : [
-                        {
-                            "half-day" : 70,
-                            "full-day" : 90
-                        }
-                    ]
+                    "half-day": 45,
+                    "full-day": 55
+                }
+            ]
+        },
+        {
+            "type": "atv",
+            "name": "Honda Pioneer",
+            "details": "Model: 1000",
+            "max-persons": 4,
+            "reservation": [
+                {
+                    "half-day": 50,
+                    "full-day": 70
+                }
+            ],
+            "walk-in": [
+                {
+                    "half-day": 60,
+                    "full-day": 80
+                }
+            ]
+        },
+        {
+            "type": "jeep",
+            "name": "Jeep Wrangler",
+            "details": "4 door, manuel, with A/C",
+            "max-persons": 5,
+            "reservation": [
+                {
+                    "half-day": 70,
+                    "full-day": 100
+                }
+            ],
+            "walk-in": [
+                {
+                    "half-day": 85,
+                    "full-day": 125
+                }
+            ]
+        },
+        {
+            "type": "jeep",
+            "name": "Jeep Wrangler",
+            "details": "2 door, open air, manuel",
+            "max-persons": 4,
+            "reservation": [
+                {
+                    "half-day": 60,
+                    "full-day": 85
+                }
+            ],
+            "walk-in": [
+                {
+                    "half-day": 70,
+                    "full-day": 90
                 }
             ]
         }
