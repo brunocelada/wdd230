@@ -6,18 +6,8 @@
             "details": "49cc",
             "maxPersons": 1,
             "img" : "images/Honda-Metropolitan.webp",
-            "reservation": [
-                {
-                    "halfDay": 20,
-                    "fullDay": 30
-                }
-            ],
-            "walkIn": [
-                {
-                    "halfDay": 25,
-                    "fullDay": 35
-                }
-            ]
+            "reservation": [20,30],
+            "walkIn": [25,35]
         },
         {
             "type": "schooter",
@@ -25,18 +15,8 @@
             "details": "110cc",
             "maxPersons": 2,
             "img" : "images/Honda-Dio.webp",
-            "reservation": [
-                {
-                    "halfDay": 30,
-                    "fullDay": 40
-                }
-            ],
-            "walkIn": [
-                {
-                    "halfDay": 35,
-                    "fullDay": 45
-                }
-            ]
+            "reservation": [30,40],
+            "walkIn": [35,45]
         },
         {
             "type": "schooter",
@@ -44,18 +24,8 @@
             "details": "149cc",
             "maxPersons": 2,
             "img" : "images/Honda-PCX150.webp",
-            "reservation": [
-                {
-                    "halfDay": 40,
-                    "fullDay": 50
-                }
-            ],
-            "walkIn": [
-                {
-                    "halfDay": 45,
-                    "fullDay": 55
-                }
-            ]
+            "reservation": [40,50],
+            "walkIn": [45,55]
         },
         {
             "type": "atv",
@@ -63,18 +33,8 @@
             "details": "Model: 1000",
             "maxPersons": 4,
             "img" : "images/Honda-Pioneer-1000.webp",
-            "reservation": [
-                {
-                    "halfDay": 50,
-                    "fullDay": 70
-                }
-            ],
-            "walkIn": [
-                {
-                    "halfDay": 60,
-                    "fullDay": 80
-                }
-            ]
+            "reservation": [50,70],
+            "walkIn": [60,80]
         },
         {
             "type": "jeep",
@@ -82,18 +42,8 @@
             "details": "4 door, manuel, with A/C",
             "maxPersons": 5,
             "img" : "images/Jeep-Wrangler-4door.webp",
-            "reservation": [
-                {
-                    "halfDay": 70,
-                    "fullDay": 100
-                }
-            ],
-            "walkIn": [
-                {
-                    "halfDay": 85,
-                    "fullDay": 125
-                }
-            ]
+            "reservation": [70,100],
+            "walkIn": [85,125]
         },
         {
             "type": "jeep",
@@ -101,18 +51,8 @@
             "details": "2 door, open air, manuel",
             "maxPersons": 4,
             "img" : "images/Jeep-Wrangler-2door.webp",
-            "reservation": [
-                {
-                    "halfDay": 60,
-                    "fullDay": 85
-                }
-            ],
-            "walkIn": [
-                {
-                    "halfDay": 70,
-                    "fullDay": 90
-                }
-            ]
+            "reservation": [60,85],
+            "walkIn": [70,90]
         }
     ]
 }
