@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Celada">
+    <meta name="description"
+      content="Contact-us page for the Scoots company (WDD230 BYUI course). 
+                The objective is to promote the rental services for those 
+                customers that like to do their homework before getting to 
+                the island and to provide information about the services, 
+                requirements, and rental process.">
+    <title>Scoots | Contact</title>
+
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.turismomexico.es/wp-content/uploads/2023/01/faro_cozumel.jpg">
+    <meta property="og:url" content="https://brunocelada.github.io/wdd230/scoots">
+
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="../styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+<body>
+   <header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">HOME</a>
+        <a href="rentals.html">RENTALS</a>
+        <a href="reservations.html">RESERVATION</a>
+        <a href="contact.html" class="active">CONTACT</a>
+    </nav>
+</header>
+
+<main>
+    <h1>CONTACT US</h1>
+    <div class="contact-page">
+        <div class="form-section">
+            <form action="thanks.html">
+                <fieldset>
+                    <legend>Give us a message</legend>
+                    <label>Name* <input id="username" type="text" name="uname" required></label>
+                    <label>Email* <input id="email" type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@" placeholder="example@gmail.com" title="Please enter a valid email address"></label>
+                    <label>Message* <textarea name="message" id="message" cols="30" rows="10" placeholder="I want to know more about..." required></textarea></label>
+                </fieldset>
+        
+                <input class="submitBtn" type="submit" value="Message us">
+            </form>
+        </div>
+        <div class="contact-info">
+            <h3>Methods</h3>
+            <p>Tel +52 6543210123</p>
+            <p>Mail scoots@gmail.com</p>
+            <a target="_blank" href="https://www.instagram.com">Follow us</a>
+        </div>
+</div>
+    <hr>
+    <h3>Locations</h3>
+    <div class="location-section">
+        <div class="location">
+            <h4>Centro de Cozumel Location</h4>
+            <p>(near the Playa del Carmen-Cozumel Ferry dock)</p>
+            <iframe title="centroMap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17776.82757265502!2d-86.94471239532089!3d20.50140299323305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1702409988928!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="location">
+            <h4>Coast Location</h4>
+            <p>(near the Terminal Puerta Maya further south along the coast)</p>
+            <iframe title="coastMap" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25143.78657477696!2d-86.98020444865583!3d20.479718173897822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTerminal%20Puerta%20Maya%20cozumel!5e0!3m2!1ses!2sar!4v1702410483849!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+    
+
+    
+</main>
+
+<footer>
+    <div class="footer-info">
+        <a target="_blank" href="attributions.html">Attributions page</a>
+        <p>&COPY;<span id="current-year"></span> | Bruno Celada</p>
+        <p id="lastModified"></p>
+    </div>
+
+    <div class="social">
+        <a target="_blank" href="https://wa.me/5493416518799">
+            <img loading="lazy" src="../chamber/images/whatsapp-logo-white2.webp" alt="Whatsapp Logo">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/brunocelada/">
+            <img loading="lazy" src="../chamber/images/instagram-logo-white.webp" alt="Instagram Logo">
+        </a>
+    </div>
+</footer>
+
+    <script src="scripts/dateAndMenu.js"></script>
+  </body>
+</html>

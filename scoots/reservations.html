@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Celada">
+    <meta name="description"
+      content="Reservations page for the Scoots company (WDD230 BYUI course). 
+                The objective is to promote the rental services for those 
+                customers that like to do their homework before getting to 
+                the island and to provide information about the services, 
+                requirements, and rental process.">
+    <title>Scoots | Reservations</title>
+
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.turismomexico.es/wp-content/uploads/2023/01/faro_cozumel.jpg">
+    <meta property="og:url" content="https://brunocelada.github.io/wdd230/scoots">
+
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="../styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+<body>
+   <header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">HOME</a>
+        <a href="rentals.html">RENTALS</a>
+        <a href="reservations.html" class="active">RESERVATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<main>
+    <h1>RESERVATIONS</h1>
+
+    <div class="reservation-grid">
+        <div class="rental-agreements">
+            <h2>Rental Services and Agreements</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </div>
+        <div class="form-div">
+            <h2>Reservation Form</h2>
+
+            <form action="thanks.html" method="get">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>Full Name* <input type="text" name="fname" required></label>
+                    <label>Phone* <input type="tel" name="phone" placeholder="1112223333" required></label>
+                    <label>Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                    <label>Home state/country* <input type="text" name="stateCountry" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label>Rental Type* 
+                        <select name="subject" required>
+                                <option value="">Please select &#9662;</option>
+                            <option value="metro">Honda Metro Scooter</option>
+                            <option value="dio">Honda Dio Scooter</option>
+                            <option value="pcx150">Honda PCX150 Scooter</option>
+                            <option value="atv">Honda Pioneer ATV</option>
+                            <option value="jeep4">Jeep Wrangler - 4 door with A/C</option>
+                            <option value="jeep2">Jeep Wrangler - 2 door</option>
+                        </select>
+                    </label>
+                    <label>Rental Date* <input type="date" name="rentalDate" required></label>
+                    <label>Period of time* (in days) <input type="number" name="period" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special accommodations</legend>
+                    <label>Cruise Line <input type="text" name="cruiseLine" placeholder="(if applicable)"></label>
+                    <label>Comments <textarea name="message" id="message" cols="30" rows="10" placeholder="Need and location of a drop-off request..."></textarea></label>
+                </fieldset>
+
+                <input class="submitBtn" type="submit" value="Rent">
+
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-info">
+        <a target="_blank" href="attributions.html">Attributions page</a>
+        <p>&COPY;<span id="current-year"></span> | Bruno Celada</p>
+        <p id="lastModified"></p>
+    </div>
+
+    <div class="social">
+        <a target="_blank" href="https://wa.me/5493416518799">
+            <img loading="lazy" src="../chamber/images/whatsapp-logo-white2.webp" alt="Whatsapp Logo">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/brunocelada/">
+            <img loading="lazy" src="../chamber/images/instagram-logo-white.webp" alt="Instagram Logo">
+        </a>
+    </div>
+</footer>
+
+    <script src="scripts/dateAndMenu.js"></script>
+  </body>
+</html>

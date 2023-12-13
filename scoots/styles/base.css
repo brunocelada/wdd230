@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
+
+:root {
+  /* Colors */
+  --main-background: #2f4858;
+  --sec-color: #33658a;
+  --third-color: #86bbd8;
+  --forth-color: #f6ae2d;
+  --contrast: #f26419;
+  --dark-contrast: #1d2c36;
+
+  /* Fonts */
+  --headings: "Raleway", sans-serif;
+  --paragraph: "Roboto", sans-serif;
+
+  /* Animations */
+  --bg-transition: color 0.1s, background-color 0.2s ease-in-out;
+  --transtition: all 300ms ease-out;
+}
+
+body {
+  color: white;
+  background-color: var(--main-background);
+  margin: 0 auto;
+  font-family: var(--paragraph);
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+hr {
+  border: solid 1px white;
+  margin: 1%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--headings);
+}
+button {
+  font-family: var(--paragraph);
+  font-size: 1.5rem;
+  background-color: var(--forth-color);
+  border: var(--contrast) solid 1px;
+  border-radius: 10px;
+  padding: 1% 2%;
+  cursor: pointer;
+  box-shadow: none;
+  color: var(--dark-contrast);
+}
+
+/* HOMEPAGE */
+/* Header */
+#menu {
+  display: block;
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  background-color: rgb(0, 0, 0, 0);
+  border: 0;
+  font-size: 2rem;
+  box-shadow: none;
+}
+#menu::before {
+  content: "≡";
+  color: var(--contrast);
+}
+#menu.show::before {
+  content: "✖";
+}
+header {
+  background-color: var(--dark-contrast);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--headings);
+  font-weight: bold;
+  margin: 0.3rem 0.5em;
+  border-radius: 5px;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+.navigation a {
+  display: none;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+  transition: var(--transtition);
+}
+.navigation a:hover {
+  background-color: var(--sec-color);
+}
+.show a {
+  display: block;
+}
+
+/* Wayfinding */
+.navigation .active {
+  color: var(--third-color);
+  background-color: rgb(0, 0, 0, 0);
+}
+
+/* Alert */
+#alert {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 1%;
+  border: solid 2px var(--forth-color);
+  border-radius: 10px;
+}
+#alert button {
+  grid-column: 1;
+  grid-row: 1/3;
+  padding: 0;
+  margin: .2rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+#alert h3 {
+  margin: .1rem;
+  padding: 0;
+  grid-column: 2;
+  grid-row: 1;
+}
+#alert p {
+  margin: 0;
+  padding: 0;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+/* Hero */
+#hero {
+  position: relative;
+}
+#hero button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1rem 20%;
+}
+/* Sections */
+.info-section a, .contact-info a{
+  color: white;
+  margin: auto 5%;
+}
+.info-section a:hover, .contact-info a:hover {
+  color: var(--third-color);
+}
+/* Rental section */
+.rental-card {
+  border: solid 2px var(--third-color);
+  border-radius: 5px;
+  margin: 1% 10%;
+}
+.rental-vehicle {
+  width: 150px;
+}
+.people-icon {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+  transition: var(--transtition);
+  display: none;
+}
+.people-icon:hover {
+  border-radius: 0%;
+}
+
+/* Weather section */
+#weatherdiv, #forecast {
+  border: solid 2px var(--third-color);
+  border-radius: 5px;
+  margin: 1% 10%;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+figure img {
+  max-width: 4rem;
+  right: 0;
+  left: 0;
+}
+
+/* Slides IMG */
+.container {
+  position: relative;
+}
+.slides {
+  display: none;
+}
+.slides img {
+  width: 100%;
+  min-height: 400px;
+  max-height: 460px;
+  object-fit: cover;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  user-select: none;
+  top: 50%;
+  margin: 1%;
+  font-size: 2em;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.text {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(29, 44, 54, 0.8) 0%,
+    rgba(47, 72, 88, 0.8) 35%,
+    rgba(51, 101, 138, 0.8) 75%
+  );
+  font-size: 1.5em;
+  padding: 1% 0;
+}
+.numbertext {
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 1% 2%;
+}
+.dot {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--sec-color);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 2%;
+}
+.active {
+  background-color: var(--third-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-contrast);
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 0.3rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.social {
+  align-self: center;
+}
+.social a:hover {
+  text-decoration: none;
+}
+.social img {
+  width: 30px;
+  margin: 0.3rem;
+}
+.social img:hover {
+  opacity: 0.7;
+}
+
+/* RENTALS PAGE */
+table {
+  width: 98%;
+  border-collapse:collapse;
+  margin: 1%;
+}
+
+td, th {
+  border: 1px solid rgba(255, 255, 255, .5);
+  padding: .1em .3em;
+  margin: 0;
+}
+
+/* RESERVATIONS PAGE */
+li {
+  text-align: justify;
+  list-style-type: circle;
+}
+ul {
+  margin: 0 1rem;
+}
+.reservation-grid, .location-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.form-div {
+  margin: 0;
+}
+
+/* CONTACT US PAGE */
+.contact-page {
+  display: grid;
+}
+iframe {
+  margin: 0 1rem;
+  width: 95%;
+}
+form {
+  text-align: left;
+  justify-content: center;
+}
+fieldset {
+  margin: 1% 2%;
+  border: white solid 1px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+legend {
+  padding: 0 1rem;
+  font-family: var(--headings);
+  font-size: 1.2em;
+}
+form input, textarea, select {
+  display: block;
+  font-family: var(--paragraph);
+  border: 1px solid var(--dark-contrast);
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.2em;
+  max-width: 20rem;
+  margin-bottom: 1.3em;
+  
+}
+form label {
+  width: 100%;
+}
+.submitBtn {
+  border: none;
+  background-color: var(--dark-contrast);
+  width: 100%;
+  max-width: 20rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.7rem;
+  color: white;
+  font-family: var(--headings);
+  font-size: large;
+  margin: 0 0 1% 1.5rem;
+}
+.thanks-img {
+  width: 100%;
+  max-width: 1000px;
+}

@@ -1,0 +1,30 @@
+@media screen and (min-width: 1200px) {
+    .navigation a {
+        font-size: 1.5em;
+      }
+
+        /* Sections */
+        .info-section h3 {
+            font-size: 2em;
+        }
+.rental h4 {
+    font-size: 1.5em;
+}
+.info-section p, .info-section span {
+    font-size: 1.2em;
+}
+  .scooters .rental-container .rental-card:nth-child(3) {
+    grid-column: inherit;
+  }
+
+  .location-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reservation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+}

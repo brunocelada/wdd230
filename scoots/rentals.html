@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Celada">
+    <meta name="description"
+      content="Rentals page for the Scoots company (WDD230 BYUI course). 
+                The objective is to promote the rental services for those 
+                customers that like to do their homework before getting to 
+                the island and to provide information about the services, 
+                requirements, and rental process.">
+    <title>Scoots | Rentals</title>
+
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.turismomexico.es/wp-content/uploads/2023/01/faro_cozumel.jpg">
+    <meta property="og:url" content="https://brunocelada.github.io/wdd230/scoots">
+
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="../styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+<body>
+   <header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">HOME</a>
+        <a href="rentals.html" class="active">RENTALS</a>
+        <a href="reservations.html">RESERVATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<main>
+    <h1>RENTALS</h1>
+    <h2>Types of rentals</h2>
+    <div id="rentals"></div>
+    <h2>Pricing</h2>
+    <div id="pricing">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="6" scope="rowgroup">Max Rental Pricing</th>
+                </tr>
+                <tr>
+                    <th colspan="2">&nbsp;</th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-info">
+        <a target="_blank" href="attributions.html">Attributions page</a>
+        <p>&COPY;<span id="current-year"></span> | Bruno Celada</p>
+        <p id="lastModified"></p>
+    </div>
+
+    <div class="social">
+        <a target="_blank" href="https://wa.me/5493416518799">
+            <img loading="lazy" src="../chamber/images/whatsapp-logo-white2.webp" alt="Whatsapp Logo">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/brunocelada/">
+            <img loading="lazy" src="../chamber/images/instagram-logo-white.webp" alt="Instagram Logo">
+        </a>
+    </div>
+</footer>
+
+    <script src="scripts/dateAndMenu.js"></script>
+    <script src="scripts/rental.js"></script>
+  </body>
+</html>
